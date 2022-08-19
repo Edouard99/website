@@ -1,0 +1,222 @@
+.ec__AboutMe{
+    grid-area: 6/7/7/-6;
+    /* background: blue; */
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 30px auto;
+    grid-template-rows: 100px auto auto;
+    z-index: 2;
+}
+
+.ec__AboutMe_Title{
+    grid-area: 1/3/2/4;
+}
+
+.ec__AboutMe_Title h1{
+    padding: 15px;
+    color: var(--color-txt-2);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 54px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.ec__AboutMe a{
+    color: var(--color-link-abme);
+}
+
+.ec__AboutMe a:hover {
+    text-decoration: underline;
+}
+
+.ec__AboutMe_description_part1{
+    grid-area: 2/3/3/4;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+    justify-content: center; 
+}
+
+.ec__AboutMe_description_part2{
+    grid-area: 4/1/-1/-1;
+}
+
+.ec__AboutMe_picture{
+    grid-area: 2/1/3/2;
+    height:100%;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;    */
+}
+
+.ec__AboutMe_picture img{
+    /* margin-top: 100px; */
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ec__AboutMe_description_part2 .ec__AboutMe_tech_list{
+    width:100%;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding-left: 50px;
+    grid-template-columns: repeat(2,300px);
+    gap: 0px 10px;
+    list-style-type: none;
+    /* position: relative; */
+}
+
+.ec__AboutMe_description_part2 .ec__AboutMe_tech_list li{
+    color: var(--color-txt-3);
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 20px auto;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.ec__AboutMe_description_part2 .ec__AboutMe_tech_list li:before {
+    content: "▶";
+    font-size: 10px;
+    color: rgb(27, 168, 200);
+}
+
+.ec__AboutMe_description_part1 h1{
+    padding: 15px;
+    color: var(--color-txt-2);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 54px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+
+.ec__AboutMe_description_part1 p,.ec__AboutMe_description_part2 p{
+    color: var(--color-txt-3);
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.3;
+    /* text-align: justify; */
+}
+
+.ec__AboutMe_description_part1 li,.ec__AboutMe_description_part2 li{
+    color: var(--color-txt-3);
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.3;
+    /* text-align: justify; */
+}
+
+.ec__AboutMe_description_part1 ul,.ec__AboutMe_description_part2 ul{
+    margin-left: 20px;
+}
+
+@media screen and (max-width : 1800px)
+{
+    .ec__AboutMe{
+        grid-area: 6/6/7/-5;
+    }
+
+}
+
+
+@media screen and (max-width : 1300px)
+{
+    .ec__AboutMe{
+        grid-area: 6/5/7/-4;
+    }
+
+}
+
+@media screen and (max-width : 1100px)
+{
+    .ec__AboutMe{
+        grid-area: 6/4/7/-3;
+    }
+
+}
+
+@media screen and (max-width : 850px){
+    .ec__AboutMe_description_part2 .ec__AboutMe_tech_list{
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        gap: 0px 10px;
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .ec__AboutMe_description_part2 .ec__AboutMe_tech_list{
+        padding-left: 0px;
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        gap: 0px 0px;
+        list-style-type: none;
+    }
+    .ec__AboutMe_description_part2 .ec__AboutMe_tech_list li{
+        grid-template-columns: 20px 200px;
+    }
+}
+
+@media screen and (max-width : 950px ){
+    .ec__AboutMe{
+        grid-area: 6/3/7/-3;
+        grid-template-columns: auto max(30%,180px) auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    .ec__AboutMe_description_part1{
+        grid-area: 3/1/4/-1;
+    }
+
+    .ec__AboutMe_description_part2{
+        grid-area: 4/1/5/-1;
+    }
+    
+    .ec__AboutMe_Title{
+        grid-area: 2/1/3/-1;
+    }
+
+    .ec__AboutMe_picture{
+        grid-area: 1/2/2/3;
+        height:auto;
+        width: 100%;
+    }
+
+    .ec__AboutMe_picture img{
+        margin-top: 0px;
+    }
+    .ec__AboutMe_Title h1{
+        padding: 15px;
+        color: var(--color-txt-2);
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 54px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 350px)
+{
+    .ec__AboutMe_Title h1{
+        padding: 15px;
+        color: var(--color-txt-2);
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 46px;
+        text-align: center;
+    }
+
+}

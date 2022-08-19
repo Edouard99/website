@@ -1,0 +1,135 @@
+:root{
+    --anim-time : 20s;
+    --anim-mode : linear;
+}
+
+
+.hexacontainer{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-template-rows: auto 22.5px 35px 22.5px auto;
+    grid-template-columns: auto calc(1.73208*35px) auto;
+}
+
+.hexa_a, .hexa_b, .hexa_c{
+    grid-area: 3 / 2 / 4 / 3;
+    position: relative;
+}
+
+.hexa_b {
+    transform: rotate(60deg);
+}
+
+.hexa_c {
+    transform: rotate(-60deg);
+}
+
+.hexa_a span,
+.hexa_b span,
+.hexa_c span {
+    position:absolute;
+    width:4px;
+    height:100%;
+    background: var(--color-logo);
+    z-index:1;
+}
+.hexa_4, .hexa_3, .hexa_5{
+    left:0;
+}
+
+.hexa_1, .hexa_2, .hexa_6{
+    right:0; 
+}
+
+.ec_init{
+    height: 100%;
+    width: 100%;
+    grid-area: 1 / 2 / -1 / 3;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ec_init p{
+    font-size: 30px;
+    color: var(--color-logo);
+    margin: auto;
+    text-align: center;
+    font-family: var(--font-family);
+
+    
+}
+
+.hexa_1{
+    animation: load1 var(--anim-time) var(--anim-mode) 0.3s infinite;
+    height: 0%;
+}
+
+.hexa_6{
+    animation: load6 var(--anim-time) var(--anim-mode) 0.3s infinite;
+}
+
+.hexa_2{
+    animation: load2 var(--anim-time) var(--anim-mode) 0.3s infinite;
+}
+
+.hexa_4{
+    animation: load4 var(--anim-time) var(--anim-mode) 0.3s infinite;
+}
+
+.hexa_3{
+    animation: load3 var(--anim-time) var(--anim-mode) 0.3s infinite;
+}
+
+.hexa_5{
+    animation: load5 var(--anim-time) var(--anim-mode) 0.3s infinite;
+}
+
+
+
+@keyframes load1 {
+    0%{bottom: 0; height: 0%;}
+    16%{bottom: 0; height: 100%;}
+    83%{top: 0; height: 100%;}
+    100%{top: 0; height: 0%;}
+    
+}
+
+@keyframes load6 {
+    0%{top: 0; height: 100%;}
+    16.6%{top: 0; height: 0%;}
+    16.62%{top :auto ;bottom: 0;height: 0%;}
+    33.3%{top :auto ;bottom: 0; height: 100%;} 
+}
+
+@keyframes load2 {
+    16.6%{top: 0; height: 100%;}
+    33.3%{top: 0; height: 0%;}
+    33.32%{top :auto ;bottom: 0;height: 0%;}
+    50%{top :auto ;bottom: 0; height: 100%;} 
+}
+
+@keyframes load4 {
+    33.3%{bottom: 0; top: auto; height: 100%;}
+    50%{bottom: 0; top: auto; height: 0%;}
+    50.02%{bottom: auto;top :0 ;height: 0%;}
+    66.6%{bottom: auto;top :0 ; height: 100%;}
+
+}
+
+@keyframes load3 {
+    50%{bottom: 0; top: auto; height: 100%;}
+    66.6%{bottom: 0; top: auto; height: 0%;}
+    66.62%{bottom: auto;top :0 ;height: 0%;}
+    83.3%{bottom: auto;top :0 ; height: 100%;}
+}
+
+@keyframes load5 {
+    66.6%{bottom: 0; top: auto; height: 100%;}
+    83.3%{bottom: 0; top: auto; height: 0%;}
+    83.32%{bottom: auto;top :0 ;height: 0%;}
+    100%{bottom: auto;top :0 ; height: 100%;}
+}

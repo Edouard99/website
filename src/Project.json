@@ -1,0 +1,204 @@
+{
+    "projects_fr": [
+        {
+            "id": 0,
+            "name": "Jeu en réalité augmentée",
+            "description": "Ce projet vise à développer un jeu de puzzle pour un environnement en réalité augmentée (HoloLens 2) avec Unity & MRTK (Mixed Reality Toolkit). Ce jeu de puzzle met l'utilisateur au défi de résoudre des puzzles holographiques 3D. Le jeu permet l'enregistrement des données analytiques du joueur (position du joueur, difficulté du puzzle, état du puzzle...) pour une analyse des données. Il existe trois niveaux de difficulté différents ainsi qu’un tutoriel pour apprendre à l'utilisateur à interagir avec les pièces holographiques.",
+            "picture_link": "game_Moment.jpg",
+            "topics":["Unity","Réalité Augmentée","MRTK","HoloLens 2","Python","C#","Azure"],
+            "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
+            "youtube":"https://www.youtube.com/watch?v=_nZH_bKy4QY",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 1,
+            "name": "Classifieur émotionnel ECG",
+            "description": "Ce projet vise à développer un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir du signal de son électrocardiogramme. Chaque signal électrocardiogramme est prétraité afin d'extraire les caractéristiques pertinentes à fournir au réseau de neurones. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle est entraîné avec une cross-validation sur l'ensemble de données du WESAD dataset. Le modèle final moyen a une accuracy de 92% et un f1-score de 82%.",
+            "picture_link": "ECG.PNG",
+            "topics":["Pytorch","Python","Heart Py","Feature Extraction","Deep Learning"],
+            "github":"https://github.com/Edouard99/Stress_Detection_ECG",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 2,
+            "name": "Classifieur émotionnel Pupillométrie",
+            "description": "L’ objectif de ce projet est le développement d’un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir de l'évolution du diamètre de sa pupille. Chaque signal du diamètre de la pupille est prétraité avec une transformée en Wavelet afin de filtrer le signal et d'en extraire des composantes fréquentielles à fournir au réseau de neurones. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle est entraîné avec une cross-validation sur un dataset public. Le modèle final moyen a une accuracy de 72%.",
+            "picture_link": "Pupil_d.PNG",
+            "topics":["Pytorch","Python","Transformée Wavelet","Feature Extraction","Deep Learning"],
+            "github":"https://github.com/Edouard99/Stress_Detetion_Pupil_Tracking",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 3,
+            "name": "Générateur d'images (GAN)",
+            "description": "Ce projet a pour objectif de développer plusieurs réseaux de neurones génératifs (DC-GAN et W-GAN). Dans le cadre de ce projet j’ai choisi de générer des Pokémons. Les datasets sont à disposition et j’y ai appliqué une méthode de data augmentation pour améliorer l’entraînement. Pour éviter le mode Collapse, un layer de Mini Batch-Discrimination est utilisé. Une fois entrainés, les réseaux sont capables de produire des images avec des formes nettes semblables à des petits monstres parfois terrifiants. Une amélioration de ces réseaux est prévue à l’avenir.",
+            "picture_link": "pokemon.PNG",
+            "topics":["Pytorch","Python","GAN","Data Augmentation","Deep Learning","Computer Vision","Mini Batch-Discrimination"],
+            "github":"https://github.com/Edouard99/GAN",
+            "youtube":"",
+            "medium":"",
+            "colab":"https://colab.research.google.com/github/Edouard99/GAN/blob/main/Train.ipynb",
+            "otherlink":""
+        },
+        {
+            "id": 4,
+            "name": "Estimation d'une loi de contrôle (MPC)",
+            "description": "L’objectif de ce projet est d’utiliser un modèle de Deep Learning pour estimer une loi de contrôle que produirait un contrôleur MPC (Method Predictive Control). L’utilisation d’un réseau de neurones pour estimer la loi de contrôle permet de réduire le coût de calcul nécessaire. L’un des problèmes est que le modèle ne donnera qu’une estimation de la loi idéale de contrôle. Pour s’assurer du respect des contraintes et de la stabilité du système, le modèle estime la loi d’un contrôleur MPC Robuste (implémenté en Matlab).",
+            "picture_link": "MPC.PNG",
+            "topics":["Pytorch","Python","Deep Learning","Matlab","Contrôleur MPC","Systèmes autonomes embarqués"],
+            "github":"https://github.com/Edouard99/DeepLearning-Robust-MPC-Estimation",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 5,
+            "name": "Système de collecte de données",
+            "description": "Ce projet a pour but de créer un système de collecte de données utilisant les dispositifs Pupil Core Device et Empatica E4. Ce système peut collecter, traiter, synchroniser les données (des 2 dispositifs), et stocker les données en temps réel avec un processus sans fil. Cela signifie que le dispositif de pupillométrie Pupil Core ne sera pas branché à l'ordinateur (utilisation d’un protocole TCP), et que les données de l'Empatica E4 seront collectées en temps réel en utilisant un protocole Bluetooth Low Energy.",
+            "picture_link": "SystemCollection.PNG",
+            "topics":["Python","Protocole BLE","TCP/IP","Raspberry PI4","Pupillométrie","Socket","Async","Systèmes embarqués"],
+            "github":"https://github.com/Edouard99/RemotePupilCoreDevice-Empatica",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":"https://photos.app.goo.gl/fZyDG4coL81rQbvN9"
+        },
+        {
+            "id": 6,
+            "name": "Prédiction du rythme cardiaque PPG",
+            "description": "L'objectif de ce projet est d'utiliser un modèle de Deep Learning pour prédire la fréquence cardiaque à partir d'un signal PPG (signal du pouls) contaminé par l’accélération. En effet, dû au mouvement, la fréquence cardiaque peut être difficile à calculer à partir d'un signal contaminé car les pics de fréquence cardiaque sont bruités par l'accélération. En utilisant le spectre de Fourier et le Deep Learning, un modèle prédit la fréquence cardiaque à partir du spectre tandis que l'autre débruite le signal puis prédit ensuite la fréquence cardiaque.",
+            "picture_link": "PPG.PNG",
+            "topics":["Pytorch","Python","Deep Learning","Spectre de Fourier","Denoiser","PPG"],
+            "github":"https://github.com/Edouard99/PPG-Prediction",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 7,
+            "name": "Mon portfolio",
+            "description": "Eh bien, vous vous trouvez sur le résultat de ce projet! J'ai réalisé ce site dans le but de mettre en valeur mon travail et de pouvoir le partager. Il a été développé en ReactJS.",
+            "picture_link": "website.PNG",
+            "topics":["ReactJs","GitHub Pages","NodeJs","JavaScript","HTML5","CSS3"],
+            "github":"https://github.com/Edouard99/website",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        }
+        
+
+    ],
+    "projects_en": [
+        {
+            "id": 0,
+            "name": "Mixed Reality Game",
+            "description": "This project goal is to develop a puzzle game for a Mixed Reality Environment (as HoloLens 2) using Unity and MRTK (Mixed Reality Toolkit). This puzzle game challenges the user to solve 3D holographic puzzle games. The game allows the recording of the player’s analytics (player position, puzzle difficulty, puzzle state…) for further data analysis. There are 3 different levels of difficulty. A tutorial is provided to teach the user how to interact with holographic pieces.",
+            "picture_link": "game_Moment.jpg",
+            "topics":["Unity","Mixed Reality","MRTK","Hololens 2","Python","C#"],
+            "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
+            "youtube":"https://www.youtube.com/watch?v=_nZH_bKy4QY",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 1,
+            "name": "Emotional classifier ECG",
+            "description": "This project aimed at developing a deep learning model able to predict the emotional state (stress/no stress) of an individual based on his/her ElectroCardiogram signal. Each electrocardiogram signal is preprocessed to extract relevant features feeding the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model is trained with a cross-validation process on the WESAD dataset. The average final model has a 92% accuracy and a 82% f1-score.",
+            "picture_link": "ECG.PNG",
+            "topics":["Pytorch","Python","Heart Py","Feature Extraction","Deep Learning"],
+            "github":"https://github.com/Edouard99/Stress_Detection_ECG",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 2,
+            "name": "Emotional classifier Pupillometry",
+            "description": "This project's goal is to create a deep learning model able to predict the emotional state (stress/no stress) of an individual based on pupillometry. Each pupil-size signal is preprocessed with Wavelet Transform to filter and extract relevant frequency features feeding the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model is trained with a cross-validation process on a public dataset. The average final model has a 72% accuracy.",
+            "picture_link": "Pupil_d.PNG",
+            "topics":["Pytorch","Python","Wavelet Transform","Feature Extraction","Deep Learning"],
+            "github":"https://github.com/Edouard99/Stress_Detetion_Pupil_Tracking",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 3,
+            "name": "Image Generator (GAN)",
+            "description": "This project aimed at developing several generative neural networks (DC-GAN and W-GAN). In this project, I chose to generate Pokemons. Datasets are available, and data augmentation was applied to improve the training. To avoid Collapse mode, a Mini Batch-Discrimination layer is used. Once trained, the networks produce images with sharp edges like small terrifying monsters. An improvement of these networks is planned for the future.",
+            "picture_link": "pokemon.PNG",
+            "topics":["Pytorch","Python","GAN","Data Augmentation","Deep Learning","Computer Vision","Mini Batch-Discrimination"],
+            "github":"https://github.com/Edouard99/GAN",
+            "youtube":"",
+            "medium":"",
+            "colab":"https://colab.research.google.com/github/Edouard99/GAN/blob/main/Train.ipynb",
+            "otherlink":""
+        },
+        {
+            "id": 4,
+            "name": "Estimation of an MPC control law",
+            "description": "The aim of this project is to use a Deep Learning model to estimate an MPC (Method Predictive Control) control law. Using a neural network to estimate the control law reduces the computational cost required. Yet, one problem is that the model will only give an estimation of the ideal control law. To ensure respect of constraints and system stability, the Deep Learning model estimates the control law of a Robust MPC controller (implemented in Matlab).",
+            "picture_link": "MPC.PNG",
+            "topics":["Pytorch","Python","Deep Learning","Matlab","MPC controler","Autonomous Embedded Systems"],
+            "github":"https://github.com/Edouard99/DeepLearning-Robust-MPC-Estimation",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 5,
+            "name": "Data collection system",
+            "description": "This project aims at creating a data collection system using the Pupil Core Device and the Empatica E4. The system can collect, process, synchronize data (of both devices), and store data in real-time with a wireless process. This means that the Pupil Core device will not be wired to the computer (using a TCP protocol), and Empatica E4’s data will be collected in real-time using a Bluetooth Low Energy Protocol.",
+            "picture_link": "SystemCollection.PNG",
+            "topics":["Python","BLE Protocol","TCP/IP","Raspberry PI4","Pupil Tracking","Socket","Async","Embedded Systems"],
+            "github":"https://github.com/Edouard99/RemotePupilCoreDevice-Empatica",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":"https://photos.app.goo.gl/fZyDG4coL81rQbvN9"
+        },
+        {
+            "id": 6,
+            "name": "Heart rate prediction from PPG",
+            "description": "This project aims to use a Deep Learning model to predict the heart rate from a Blood Volume Pulse (BVP) PPG signal contaminated by motion artifact. Indeed, due to motion artifact, the heart rate can be hard to compute from a contaminated signal because the heart rate peaks are noised in the signal by acceleration. Using the Fourier spectrum and deep learning, one of the models predicts the heart rate from the spectrum directly while the other denoises the signal and then predicts the heart rate.",
+            "picture_link": "PPG.PNG",
+            "topics":["Pytorch","Python","Deep Learning","Fourier Spectrum","Denoiser","PPG"],
+            "github":"https://github.com/Edouard99/PPG-Prediction",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        
+        {
+            "id": 7,
+            "name": "My portfolio",
+            "description": "Well, you are looking at the result of this project! To share my work with others, I created this website in ReactJS.",
+            "picture_link": "website.PNG",
+            "topics":["ReactJs","GitHub Pages","NodeJs","JavaScript","HTML5","CSS3"],
+            "github":"https://github.com/Edouard99/website",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        }
+        
+
+    ]
+
+}
