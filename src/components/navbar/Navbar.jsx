@@ -2,52 +2,47 @@ import React, {useState} from 'react';
 import { Logo_static } from '..'
 import './navbar.css';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { Menu} from '..'
 import logo from '../../assets/logo.svg';
 
-const Menu = ()=> (
-  <>
-    <p><a href="#about_me">About Me</a></p>
-    <p><a href="#projects">Projects</a></p>
-    <p><a href="#contact_me">Contact Me</a></p>
-  </>
-)
 
-const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+
+const Navbar = ({setToggleMenu,toggleMenu}) => {
   return (
-    <div className='gpt3__navbar'>
-      <div className='gpt3__navbar-links'>
-        <div className='gpt3__navbar-links_logo'>
+    <>
+    <div className='ec__navbar'>
+      <div className='ec__navbar-links_logo'>
           {/* <img src={logo} alt="logo"/> */}
           <Logo_static />
-          
         </div>
-        <div className='gpt3__navbar-links_container'>
+      <div className='ec__navbar-links'>
+        
+        <div className='ec__navbar-links_container'>
           <Menu />
         </div>
       </div>
-      <div className='gpt3__navbar-sign'>
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
-      </div>
-      <div className='gpt3__navbar-menu'>
+      
+      <div className='ec__navbar-menu'>
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)}/>
+          ? <RiCloseLine color="#fff" size={27} onClick={() => {setToggleMenu(false)}}/>
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)}/>
         }
-        {toggleMenu && (
-        <div className='gpt3__navbar-menu_container scale-up-center'>
-          <div className='gpt3__navbar-menu_container-links'>
+        {/* {toggleMenu && (
+        <div className='ec__navbar-menu_container scale-up-center'>
+          <div className='ec__navbar-menu_container-links'>
             <Menu />
           </div>
-          <div className='gpt3__navbar-menu_container-links-sign'>
-              <p>Sign in</p>
-              <button type="button">Sign up</button>
-            </div>
         </div>
-        )}
+        )} */}
       </div>
     </div>
+    {/* { toggleMenu &&(
+      <div className='ec__navbar-blur'>
+
+      </div>
+    )} */}
+      
+    </>
   )
 }
 

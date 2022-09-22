@@ -1,12 +1,20 @@
-.H1,.H2,.H3,.H4{
-    position: absolute;
-    width : 83.14px;
-    height: 48px;
+:root{
+    --anim-time : 20s;
+    --anim-mode : linear;
 }
 
-.hexa_a,.hexa_b,.hexa_c {
-    width:100%;
-    height:100%;
+
+.hexacontainer{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-template-rows: 7.5px 35px 7.5px;
+    grid-template-columns: auto calc(1.73208*35px) auto;
+}
+
+.hexa_a, .hexa_b, .hexa_c{
+    grid-area: 2 / 2 / 3 / 3;
     position: relative;
 }
 
@@ -18,95 +26,103 @@
     transform: rotate(-60deg);
 }
 
-
 .hexa_a span,
 .hexa_b span,
 .hexa_c span {
     position:absolute;
     width:4px;
     height:100%;
-    background:#fff;z-index:999999;
+    background:#fff;z-index:1;
 }
-
 .hexa_4, .hexa_3, .hexa_5{
     left:0;
 }
 
 .hexa_1, .hexa_2, .hexa_6{
-    right:0;
+    right:0; 
 }
 
-.ec__logo_static-E{
-    position: relative;
-    left:20%;
-    top:10%;
-    width: 25%;
-    height: 80%;
-}
-
-.ec__logo_static-E_1{
-    position: absolute;
-    width: 4px;
+.ec_init{
     height: 100%;
-    background:#fff;
-}
-
- .ec__logo_static-E_2{
-    position: absolute;
-    top:50%;
-    width: 80%;
-    height: 4px;
-    background:#fff;
-}
-
- .ec__logo_static-E_3{
-    position: absolute;
-    top:0%;
     width: 100%;
-    height: 4px;
-    background:#fff;
+    grid-area: 1 / 2 / 4 / 3;
+    margin: auto;
 }
 
-.ec__logo_static-E_4{
-    position: absolute;
-    top:100%;
-    width: 100%;
-    height: 4px;
-    background:#fff;
+.ec_init p{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.ec__logo_static-C{
-    position: relative;
-    left:55%;
-    top:10%;
-    width: 25%;
-    height: 80%;
+.hexa_1{
+    animation: load1 var(--anim-time) var(--anim-mode) 0.3s infinite;
+    height: 0%;
 }
 
-.ec__logo_static-C_1{
-    position: absolute;
-    width: 4px;
-    top:38%;
-    height: 35%;
-    background:#fff;
+.hexa_6{
+    animation: load6 var(--anim-time) var(--anim-mode) 0.3s infinite;
 }
 
-.ec__logo_static-C_2{
-    position: absolute;
-    width: 4px;
-    left:17%;
-    top:0%;
-    height: 45%;
-    background:#fff;
-    transform: rotate(28deg);
+.hexa_2{
+    animation: load2 var(--anim-time) var(--anim-mode) 0.3s infinite;
 }
 
-.ec__logo_static-C_3{
-    position: absolute;
-    width: 4px;
-    left:65%;
-    top:-15%;
-    height: 40%;
-    background:#fff;
-    transform: rotate(90deg);
+.hexa_4{
+    animation: load4 var(--anim-time) var(--anim-mode) 0.3s infinite;
+}
+
+.hexa_3{
+    animation: load3 var(--anim-time) var(--anim-mode) 0.3s infinite;
+}
+
+.hexa_5{
+    animation: load5 var(--anim-time) var(--anim-mode) 0.3s infinite;
+}
+
+
+
+@keyframes load1 {
+    0%{bottom: 0; height: 0%;}
+    16%{bottom: 0; height: 100%;}
+    83%{top: 0; height: 100%;}
+    100%{top: 0; height: 0%;}
+    
+}
+
+@keyframes load6 {
+    0%{top: 0; height: 100%;}
+    16.6%{top: 0; height: 0%;}
+    16.62%{top :auto ;bottom: 0;height: 0%;}
+    33.3%{top :auto ;bottom: 0; height: 100%;} 
+}
+
+@keyframes load2 {
+    16.6%{top: 0; height: 100%;}
+    33.3%{top: 0; height: 0%;}
+    33.32%{top :auto ;bottom: 0;height: 0%;}
+    50%{top :auto ;bottom: 0; height: 100%;} 
+}
+
+@keyframes load4 {
+    33.3%{bottom: 0; top: auto; height: 100%;}
+    50%{bottom: 0; top: auto; height: 0%;}
+    50.02%{bottom: auto;top :0 ;height: 0%;}
+    66.6%{bottom: auto;top :0 ; height: 100%;}
+
+}
+
+@keyframes load3 {
+    50%{bottom: 0; top: auto; height: 100%;}
+    66.6%{bottom: 0; top: auto; height: 0%;}
+    66.62%{bottom: auto;top :0 ;height: 0%;}
+    83.3%{bottom: auto;top :0 ; height: 100%;}
+}
+
+@keyframes load5 {
+    66.6%{bottom: 0; top: auto; height: 100%;}
+    83.3%{bottom: 0; top: auto; height: 0%;}
+    83.32%{bottom: auto;top :0 ;height: 0%;}
+    100%{bottom: auto;top :0 ; height: 100%;}
 }

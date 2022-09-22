@@ -1,0 +1,22 @@
+.ec_AboutMe{
+    background: #000;
+    border-radius: 5px;
+    grid-area: 4 / 3 / -1 / -3;
+    display: grid;
+    grid-template-columns: minmax(300px,500px) auto minmax(300px,500px);
+}
+
+.ec_AboutMe_Descript{
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+
+.ec_AboutMe_3d_object{
+    height: 100%;
+    width: 100%;
+    grid-area: 1/ -2 / 2 / -1;
+    /* position: absolute;
+    height: auto;
+    width: auto; */
+
+}

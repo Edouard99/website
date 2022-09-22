@@ -33,13 +33,12 @@ a {
     /* global 92%+ browsers support */
     background:radial-gradient(circle at 49% 74%, rgba(162, 158, 178, 1) 0%, rgba(0, 24, 44, 1) 100%);
 
+    display: grid;
+    grid-template-columns: 40px repeat(auto-fill,minmax(100px,1fr)) 40px;
+    grid-template-rows: 2rem 50px 100px auto;
 }
 
-.gradient__bg            
-{
 
-    
-}
 
 .gradient__text
 {
