@@ -47,13 +47,18 @@
     width: 100%;
     grid-area: 1 / 2 / 4 / 3;
     margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .ec_init p{
-    font-size: 18px;
+    font-size: 30px;
     color: #fff;
+    margin: auto;
     text-align: center;
-    vertical-align: middle;
+
+    
 }
 
 .hexa_1{
