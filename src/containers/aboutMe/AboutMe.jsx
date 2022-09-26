@@ -1,18 +1,12 @@
 import React, { Suspense } from 'react';
 import './aboutMe.css';
-// import { useGLTF } from '@react-three/drei/core/useGLTF';
-// import { Canvas} from "react-three-fiber";
-
-// function Croissant() {
-//   const { scene } = useGLTF('kiwi.gltf')
-//   return <primitive object={scene} />;
-// }
+import {Object_3d } from '../../components'
 
 
 
 const AboutMe = () => {
   return (
-    <div className='ec_AboutMe'>
+    <div className='ec__AboutMe'>
       <div className='ec__AboutMe_Descript'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -25,13 +19,7 @@ const AboutMe = () => {
 
       </div>
       <div className='ec__AboutMe_3d_obj'>
-        {/* <Canvas camera={{position: [0,0,0], fov:0.5}}>
-          <pointLight position={[10,10,10]} intensity={1.3}/>
-          <Suspense fallback={null}>
-            <Croissant/>
-          </Suspense>
-
-        </Canvas> */}
+        <Object_3d/>
       </div>
       
     </div>

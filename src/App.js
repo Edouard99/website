@@ -1,6 +1,6 @@
 import React from 'react'
-import { sideMenu, Footer, AboutMe, Possibility, Features, WhatGPT3, Header, SideMenu } from './containers'
-import { Cta, Brand, Navbar, Blur} from './components'
+import { AboutMe, Projects, SideMenu } from './containers'
+import { Navbar, Blur} from './components'
 import './App.css';
 import {useState} from 'react';
 
@@ -25,7 +25,7 @@ const App = () => {
         )
         }
         <AboutMe />
-        
+        <Projects/>
 
 
         {/* <div className="gradient__bg">

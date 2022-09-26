@@ -4,6 +4,11 @@
     height: 100%;
     z-index: 6;
     background: rgba(19, 9, 74, 0.682);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction:line;
+
     
 }
 
@@ -19,7 +24,20 @@
     top: 82px;
     /* right: 0; */
     /* margin-top: 1rem; */
-    min-width: 250px;
+    /* min-width: 250px; */
+    margin-left:0px;
     border-radius: 5px;
     box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.ec__sideMenu-menu_container p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
 }

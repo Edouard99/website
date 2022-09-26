@@ -110,7 +110,7 @@ grid-template-rows: 50px;
 }
 
 
-@media screen and (max-width : 1050px)
+@media screen and (max-width : 780px)
 {
     .ec__navbar-links_container{
         display: none;

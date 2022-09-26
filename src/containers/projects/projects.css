@@ -1,0 +1,7 @@
+.ec__Projects{
+    grid-area: 6/3/7/-3;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
