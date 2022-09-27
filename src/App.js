@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutMe, Projects, SideMenu } from './containers'
+import { AboutMe, Footer, Header, Projects, SideLinks, SideMenu } from './containers'
 import { Navbar, Blur} from './components'
 import './App.css';
 import {useState} from 'react';
@@ -24,8 +24,11 @@ const App = () => {
           
         )
         }
-        <AboutMe />
+        <Header />
+        <AboutMe/>
         <Projects/>
+        <SideLinks/>
+        <Footer/>
 
 
         {/* <div className="gradient__bg">

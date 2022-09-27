@@ -58,6 +58,7 @@ const Object = () => {
     if (container && !renderer) {
       const scW = container.clientWidth;
       const scH = container.clientHeight;
+      console.log(scW);
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
         alpha: true
@@ -127,7 +128,7 @@ const Object = () => {
 
 const Object_3d = () => {
   return (
-    <div className='aaa'/>
+    <Object/>
   )
 }
 

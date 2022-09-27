@@ -1,0 +1,26 @@
+.ec__SideLinks{
+    grid-area: 1/1/-1/2;
+    display: flex;
+
+}
+
+.ec__SideLinks_container{
+    position: fixed;
+    top:200px;
+    height:150px;
+    width: 40px;
+    background: rgb(0, 255, 60);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.ec__SideLinks_container svg{
+    fill:#fff;
+    cursor: pointer;
+}
+.ec__SideLinks_container svg:hover{
+    fill:red;
+}

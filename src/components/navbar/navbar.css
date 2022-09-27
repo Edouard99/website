@@ -32,8 +32,7 @@ grid-template-rows: 50px;
 }
 
 
-/* .ec__navbar-links_container p,
-.ec__navbar-menu_container p {
+.ec__navbar-links_container p {
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
@@ -43,7 +42,7 @@ grid-template-rows: 50px;
 
     margin: 0 1rem;
     cursor: pointer;
-} */
+}
 
 .ec__navbar-menu_container button{
     padding:0.5rem 1rem;

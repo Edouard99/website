@@ -1,62 +1,6 @@
 .ec__AboutMe{
-    background: rgb(206, 19, 19);
-    border-radius: 5px;
-    grid-area: 4 / 3 / 5 / -3;
-    display: grid;
-    grid-template-columns: 400px auto minmax(var(--test-variable),300px);
-}
-
-.ec__AboutMe_Descript{
-    grid-area: 1 / 1 / 2 / 2;
-
-}
-
-.ec__AboutMe_3d_obj{
-    height: 100%;
+    grid-area: 4/3/5/-3;
+    background: blue;
+    height: 300px;
     width: 100%;
-    grid-area: 1/ -2 / 2 / -1;
-    /* position: absolute;
-    height: auto;
-    width: auto; */
-
-}
-
-@media screen and (max-width : 1100px ){
-    .ec__AboutMe{
-        grid-area: 4/3/5/-3;
-    }
-}
-
-@media screen and (max-width : 780px ){
-    .ec__AboutMe{
-        grid-area: 4/3/5/-3;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 250px 250px;
-    }
-
-    .ec__AboutMe_Descript{
-        grid-area: 2/1/-1/-1;
-    }
-
-    .ec__AboutMe_3d_obj{
-        grid-area: 1/1/2/-1;
-    }
-}
-
-@media screen and (max-width : 550px ){
-    .ec__AboutMe{
-        grid-area: 4/2/5/-2;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 250px 250px;
-    }
-
-    .ec__AboutMe_Descript{
-        grid-area: 2/1/-1/-1;
-    }
-
-    .ec__AboutMe_3d_obj{
-        grid-area: 1/1/2/-1;
-    }
 }
