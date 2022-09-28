@@ -1,5 +1,5 @@
 import React from 'react';
-import './object_3d.css';
+import './object3d.css';
 import { useState, useEffect, useRef } from "react";
 //import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import * as THREE from "three";
@@ -9,8 +9,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 var model;
 
-function loadGLTFModel(scene, glbPath, options) {
-  const { receiveShadow, castShadow } = options;
+function loadGLTFModel(scene, glbPath) {
   return new Promise((resolve, reject) => {
     
     const loader = new RGBELoader();
@@ -19,7 +18,7 @@ function loadGLTFModel(scene, glbPath, options) {
 
       texture.mapping = THREE.EquirectangularReflectionMapping;
 
-      //scene.background = texture;
+      scene.background = texture;
       scene.environment = texture;
 
       //render();
@@ -35,9 +34,6 @@ function loadGLTFModel(scene, glbPath, options) {
         //render();
 
       } );
-
-      
-
 
   },
   undefined,
@@ -58,10 +54,11 @@ const Object = () => {
     if (container && !renderer) {
       const scW = container.clientWidth;
       const scH = container.clientHeight;
-      console.log(scW);
+      //console.log(scW);
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
-        alpha: true
+        alpha: true,
+        premultipliedAlpha : false
       });
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(scW, scH);
@@ -84,7 +81,6 @@ const Object = () => {
       camera.position.z = 0;
       camera.rotation.y = 45* Math.PI /180;
       camera.rotation.z = 45* Math.PI /180;
-      const target = new THREE.Vector3(0, 25, 0);
       const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
       scene.add(ambientLight);
       // const controls = new OrbitControls(camera, renderer.domElement);
@@ -98,7 +94,6 @@ const Object = () => {
       });
 
       let req = null;
-      let frame = 0;
       const animate = () => {
         req = requestAnimationFrame(animate);
         model.rotation.y+=0.01;
@@ -110,6 +105,7 @@ const Object = () => {
         renderer.dispose();
       };
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -126,10 +122,10 @@ const Object = () => {
 };
 
 
-const Object_3d = () => {
+const Object3d = () => {
   return (
     <Object/>
   )
 }
 
-export default Object_3d
+export default Object3d

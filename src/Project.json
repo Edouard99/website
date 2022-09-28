@@ -13,31 +13,7 @@
             "otherlink":"https://link.com"
         },
         {
-            "id": 2,
-            "name": "Project Template like a boss",
-            "description": "This template aims to allow you to share your projects easily",
-            "picture_link": "/feed_me_a_real_link.png",
-            "topics":["python","ada","machine learning"],
-            "github":"https://github.com",
-            "youtube":"https://youtube.com",
-            "medium":"https://medium.com",
-            "colab":"https://colab.com",
-            "otherlink":"https://link.com"
-        },
-        {
-            "id": 2,
-            "name": "Project Template like a boss",
-            "description": "This template aims to allow you to share your projects easily",
-            "picture_link": "/feed_me_a_real_link.png",
-            "topics":["python","ada","machine learning"],
-            "github":"https://github.com",
-            "youtube":"https://youtube.com",
-            "medium":"https://medium.com",
-            "colab":"https://colab.com",
-            "otherlink":"https://link.com"
-        },
-        {
-            "id": 2,
+            "id": 1,
             "name": "Project Template like a boss",
             "description": "This template aims to allow you to share your projects easily",
             "picture_link": "/feed_me_a_real_link.png",

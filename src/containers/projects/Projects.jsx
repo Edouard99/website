@@ -8,7 +8,7 @@ const Projects = () => {
     <div className='ec__Projects'>
         {project_file.projects.map((data, key) => {
                 return <>
-                    <Project name={data.name} description={data.description} pic_link={data.picture_link}
+                    <Project id={data.id} name={data.name} description={data.description} pic_link={data.picture_link}
                         topics={data.topics} github={data.github} youtube={data.youtube}
                         medium={data.medium} colab={data.colab} other={data.otherlink}/>
                     

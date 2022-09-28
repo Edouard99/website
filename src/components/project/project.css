@@ -1,8 +1,59 @@
-.ec__Project{
-    height:250px;
-    width: 700px;
-    background: rgb(119, 144, 255);
+.ec__Project_right{
+    height:300px;
+    width: 900px;
+    background: #8eacbb82;
     border: 5px;
     border-radius: 30px;
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.ec__Project_left{
+    height:300px;
+    width: 900px;
+    background: #8eacbb82;
+    border: 5px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.Name{
+    padding: 15px;
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.Description_text{
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 20px;
+
+}
+
+.ec__Project_right img{
+    height:100%;
+    width: auto;
+    border-radius: 10px;
+    grid-area: 1/2/-1/3;
+}
+
+.ec__Project_right_description{
+    grid-area: 1/1/-1/2;
+}
+
+.ec__Project_left img{
+    height:100%;
+    width: auto;
+    border-radius: 10px;
+    grid-area: 1/1/-1/2;
+}
+
+.ec__Project_left_description{
+    grid-area: 1/2/-1/3;
 }

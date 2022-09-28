@@ -21,21 +21,21 @@ a {
 .App {
     caret-color: transparent;
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.81) 100%);
+    background:-moz-radial-gradient(circle at 50% 50%, rgba(15, 74, 131, 1) 0%, rgba(8, 28, 47, 1) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.81) 100%);
+    background:-webkit-radial-gradient(circle at 50% 50%, rgba(15, 74, 131, 1) 0%, rgba(8, 28, 47, 1) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.81) 100%);
+    background:-o-radial-gradient(circle at 50% 50%, rgba(15, 74, 131, 1) 0%, rgba(8, 28, 47, 1) 100%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.81) 100%);
+    background:-ms-radial-gradient(circle at 50% 50%, rgba(15, 74, 131, 1) 0%, rgba(8, 28, 47, 1) 100%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.81) 100%);
+    background:radial-gradient(circle at 50% 50%, rgba(15, 74, 131, 1) 0%, rgba(8, 28, 47, 1) 100%);
     display: grid;
-    grid-template-columns: 40px 50px repeat(auto-fill,minmax(100px,1fr)) 40px 50px;
+    grid-template-columns: 50px 250px repeat(auto-fill,minmax(100px,1fr)) 250px 50px;
     grid-template-rows: 2rem 50px 100px auto 50px auto 50px auto 50px auto;
 }
 

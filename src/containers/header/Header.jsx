@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import './header.css';
-import {Object_3d } from '../../components'
+import {Object3d } from '../../components'
 
 
 
@@ -8,18 +8,16 @@ const Header = () => {
   return (
     <div className='ec__Header'>
       <div className='ec__Header_Descript'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Mauris rhoncus aenean vel elit scelerisque
-            mauris pellentesque pulvinar. Adipiscing tristique
-              risus nec feugiat in fermentum posuere urna. Etiam
-              non quam lacus suspendisse faucibus. Aenean sed
-                adipiscing diam donec adipiscing 
-                tristique risus neec.</p>
+        <h4>Hey ! Welcome on my website I am </h4>
+        <h2 className='ec__Header_Descript_name'>Edouard Castets</h2>
+        <h3>I am software and aerospace engineer that works with Deep Learning to create cool things</h3>
+        <p>
+          I am a software & aerospace engineer specialized in Deep Learning and autonomous embeded systems and above all passionated by technology and smart systems.
+        </p>
 
       </div>
       <div className='ec__Header_3d_obj'>
-        <Object_3d/>
+        <Object3d/>
       </div>
       
     </div>
