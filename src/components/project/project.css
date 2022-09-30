@@ -2,12 +2,14 @@
     height:300px;
     width: 900px;
     background: #8eacbb82;
-    border: 5px;
-    border-radius: 30px;
-    margin-top: 20px;
+    /* border: 5px;
+    border-radius: 30px; */
+    grid-area: 1/1/-1/-1;
     display: grid;
     grid-template-columns: 60% 40%;
+    
 }
+
 
 .ec__Project_left{
     height:300px;
@@ -15,7 +17,7 @@
     background: #8eacbb82;
     border: 5px;
     border-radius: 30px;
-    margin-top: 20px;
+    grid-area: 1/1/-1/-1;
     display: grid;
     grid-template-columns: 40% 60%;
 }

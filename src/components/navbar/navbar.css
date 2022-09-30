@@ -2,13 +2,13 @@
 grid-area: 2 / 2 / 3 /-2;
 display :grid;
 /* padding: 2rem 6rem; */
-grid-template-columns: repeat(auto-fill,minmax(100px,1fr)) ;
-grid-template-rows: 50px;
+grid-template-columns: 100px auto 100px ;
+grid-template-rows: 80px;
 }
 
 .ec__navbar-links {
     align-items: center;
-    grid-area: 1 / 2 / 2 / -1;
+    grid-area: 1 / 2 / 2 / -2;
 }
 
 .ec__navbar-links_logo{
@@ -36,11 +36,11 @@ grid-template-rows: 50px;
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 25px;
     text-transform: capitalize;
 
-    margin: 0 1rem;
+    margin: 0 2rem;
     cursor: pointer;
 }
 

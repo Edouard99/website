@@ -7,7 +7,7 @@ import * as THREE from "three";
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
-var model;
+var sat;
 
 function loadGLTFModel(scene, glbPath) {
   return new Promise((resolve, reject) => {
@@ -18,20 +18,14 @@ function loadGLTFModel(scene, glbPath) {
 
       texture.mapping = THREE.EquirectangularReflectionMapping;
 
-      scene.background = texture;
+      // scene.background = texture;
       scene.environment = texture;
 
-      //render();
-
-      // model
-
       const loader2 = new GLTFLoader();
-      loader2.load( 'soyuz.glb', function ( gltf ) {
-        model = gltf.scene
-        scene.add( model );
-        resolve(model);
-
-        //render();
+      loader2.load( glbPath, function ( gltf ) {
+        sat = gltf.scene
+        scene.add( sat );
+        resolve(sat);
 
       } );
 
@@ -44,7 +38,7 @@ function loadGLTFModel(scene, glbPath) {
   });
 }
 
-const Object = () => {
+const Object = ({path_file}) => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const [renderer, setRenderer] = useState();
@@ -87,16 +81,16 @@ const Object = () => {
       // controls.autoRotate = true;
       // controls.target = target;
       
-      loadGLTFModel(scene, "/soyuz.glb", {
-      }).then((model) => {
-        animate(model);
+      loadGLTFModel(scene, path_file, {
+      }).then((sat) => {
+        animate(sat);
         setLoading(false);
       });
 
       let req = null;
       const animate = () => {
         req = requestAnimationFrame(animate);
-        model.rotation.y+=0.01;
+        sat.rotation.y+=0.01;
         renderer.render(scene, camera);
       };
 
@@ -113,7 +107,7 @@ const Object = () => {
       ref={refContainer}
     >
       {loading && (
-        <span style={{ position: "absolute", left: "50%", top: "50%" }}>
+        <span style={{ left: "50%", top: "50%" }}>
           Loading...
         </span>
       )}
@@ -122,10 +116,10 @@ const Object = () => {
 };
 
 
-const Object3d = () => {
+const Object3dsat = ({path_file}) => {
   return (
-    <Object/>
+    <Object path_file={path_file}/>
   )
 }
 
-export default Object3d
+export default Object3dsat

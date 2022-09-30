@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    grid-template-rows: 7.5px 35px 7.5px;
+    grid-template-rows: 22.5px 35px 22.5px;
     grid-template-columns: auto calc(1.73208*35px) auto;
 }
 

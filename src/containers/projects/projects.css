@@ -1,7 +1,14 @@
 .ec__Projects{
     grid-area: 8/3/9/-3;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns: 50px 800px 50px;
+    grid-template-rows: auto 50px auto;
     justify-items: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.ec__button{
+    height:100%;
+    width: 100%;
 }
