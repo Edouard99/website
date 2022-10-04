@@ -2,38 +2,38 @@
     "projects": [
         {
             "id": 0,
-            "name": "Project Template",
-            "description": "This template aims to allow you to share your projects easily",
-            "picture_link": "/feed_me_a_real_link.png",
-            "topics":["python","ada","machine learning"],
+            "name": "Mixed Reality Game",
+            "description": "This project aims to develop a puzzle game for Mixed Reality Environment as Hololens 2 (on which I have worked). This puzzle game challenges the user to solve 3d holographic puzzle game. There is 3 different level of difficulty. A tutorial is also implemented to teach the user how to interact with Holographic pieces.",
+            "picture_link": "game_Moment.jpg",
+            "topics":["Python","Ada","Machine Learning"],
             "github":"https://github.com",
             "youtube":"https://youtube.com",
             "medium":"https://medium.com",
-            "colab":"https://colab.com",
+            "colab":"",
             "otherlink":"https://link.com"
         },
         {
             "id": 1,
-            "name": "Project Template like a boss",
-            "description": "This template aims to allow you to share your projects easily",
-            "picture_link": "/feed_me_a_real_link.png",
-            "topics":["python","ada","machine learning"],
+            "name": "ECG Classifier",
+            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on its ElectroCardiogram signal. The model has been train on the WESAD dataset WESAD dataset.",
+            "picture_link": "Network.png",
+            "topics":["Python","Machine Learning"],
             "github":"https://github.com",
-            "youtube":"https://youtube.com",
-            "medium":"https://medium.com",
+            "youtube":"",
+            "medium":"",
             "colab":"https://colab.com",
-            "otherlink":"https://link.com"
+            "otherlink":""
         },
         {
             "id": 2,
-            "name": "Project Template like a boss",
-            "description": "This template aims to allow you to share your projects easily",
-            "picture_link": "/feed_me_a_real_link.png",
-            "topics":["python","ada","machine learning"],
+            "name": "Pupil diameter Classifier",
+            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on its Pupil diameter evolution. The model has been train on a dataset built by Pedrotti et al",
+            "picture_link": "prototype.jpg",
+            "topics":["Python","Lua","Machine Learning","Raspberry Pi"],
             "github":"https://github.com",
             "youtube":"https://youtube.com",
-            "medium":"https://medium.com",
-            "colab":"https://colab.com",
+            "medium":"",
+            "colab":"",
             "otherlink":"https://link.com"
         }
 

@@ -18,10 +18,10 @@
 }
 
 .ec__SideLinks_container svg{
-    fill:#8eacbb;
+    fill:var(--color-icon);
     cursor: pointer;
     
 }
 .ec__SideLinks_container svg:hover{
-    fill:rgb(0, 221, 255);
+    fill:var(--color-icon-hover);
 }

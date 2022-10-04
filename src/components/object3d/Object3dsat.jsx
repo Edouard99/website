@@ -1,9 +1,7 @@
 import React from 'react';
 import './object3d.css';
 import { useState, useEffect, useRef } from "react";
-//import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import * as THREE from "three";
-//import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
@@ -18,7 +16,6 @@ function loadGLTFModel(scene, glbPath) {
 
       texture.mapping = THREE.EquirectangularReflectionMapping;
 
-      // scene.background = texture;
       scene.environment = texture;
 
       const loader2 = new GLTFLoader();
@@ -77,9 +74,6 @@ const Object = ({path_file}) => {
       camera.rotation.z = 45* Math.PI /180;
       const ambientLight = new THREE.AmbientLight(0xcccccc, 1);
       scene.add(ambientLight);
-      // const controls = new OrbitControls(camera, renderer.domElement);
-      // controls.autoRotate = true;
-      // controls.target = target;
       
       loadGLTFModel(scene, path_file, {
       }).then((sat) => {

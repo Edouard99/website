@@ -1,5 +1,5 @@
 .ec__AboutMe{
-    grid-area: 6/3/7/-3;
+    grid-area: 6/4/7/-4;
     /* background: blue; */
     height: 300px;
     width: 100%;
@@ -25,7 +25,7 @@
 
 .ec__AboutMe_description h1{
     padding: 15px;
-    color: #7fd4ff;
+    color: var(--color-txt-2);
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 54px;
@@ -33,7 +33,7 @@
 
 
 .ec__AboutMe_description p{
-    color: #fff;
+    color: var(--color-txt-3);
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 20px;

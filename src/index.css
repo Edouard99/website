@@ -3,13 +3,20 @@
 :root {
   /* --font-family: 'Manrope', sans-serif; */
   --font-family: 'Roboto', sans-serif;
-  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
-  
-  --color-bg: #040C18;
-  --color-footer : #031B34;
-  --color-blog: #042c54;
-  --color-text: #81AFDD;
-  --color-subtext: #FF8A71;
-  --test-variable: 200px;
+
+  --color-navbar-content:#fff;
+  --color-txt-4:#abb7bd;
+  --color-txt-1:#fff;
+  --color-txt-2:#2ca2dd;
+  --color-txt-3:#fff;
+  --backgroud-grad: radial-gradient(circle at 100% 44%, rgba(0, 90, 102, 1) 0%, rgba(3, 0, 36, 1) 100%);
+  --background-proj-txt:#385b6de0;
+  --color-button:#fff;
+  --color-icon:#8eacbb;
+  --color-icon-hover:rgb(0, 221, 255);
+  --color-logo:#fff;
+  --color-proj-border:#fff;
+  --box-shadow-proj:10px 10px 30px 10px rgba(3, 0, 36, 1);
+  --box-shadow-proj-txt:0px 5px 30px 2px #272727c9;
+
 }

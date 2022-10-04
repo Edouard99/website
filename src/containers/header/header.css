@@ -1,7 +1,7 @@
 .ec__Header{
     /* background: rgb(206, 19, 19); */
     border-radius: 5px;
-    grid-area: 4 / 3 / 5 / -3;
+    grid-area: 4 / 4 / 5 / -4;
     display: grid;
     grid-template-columns: 400px auto 300px auto;
     grid-template-rows: 150px 100px;
@@ -23,42 +23,24 @@
     justify-content: space-evenly;
 }
 
-/* .ec__Header_Descript{
-    grid-area: 1 / 1 / 2 / 2;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-} */
 
 .ec__Header_Intro_name {
-    color: #fff;
+    color: var(--color-txt-1);
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 54px;
     padding-left: 0px;
 }
-/* .ec__Header h2{
-    color: #fff;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 54px;
-}
-
-.ec__Header_Descript .ec__Header_Descript_name{
-    padding-left: 0px;
-} */
 
 .ec__Header_Intro h4{
-    color: #abb7bd;
+    color: var(--color-txt-4);
     font-family: var(--font-family);
     font-weight:400;
     font-size: 24px;
 }
 
 .ec__Header_Content h3{
-    color: #7fd4ff;
+    color: var(--color-txt-2);
     font-family: var(--font-family);
     font-weight:600;
     font-size: 28px;
@@ -66,7 +48,7 @@
 }
 
 .ec__Header_Content p{
-    color: #fff;
+    color: var(--color-txt-3);
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 20px;
