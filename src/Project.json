@@ -5,7 +5,7 @@
             "name": "Mixed Reality Game",
             "description": "This project aims to develop a puzzle game for Mixed Reality Environment as Hololens 2 (on which I have worked). This puzzle game challenges the user to solve 3d holographic puzzle game. There is 3 different level of difficulty. A tutorial is also implemented to teach the user how to interact with Holographic pieces.",
             "picture_link": "game_Moment.jpg",
-            "topics":["Python","Ada","Machine Learning"],
+            "topics":["Python","Ada","Machine Learning","Topic1","ReactJs","Deep Learning"],
             "github":"https://github.com",
             "youtube":"https://youtube.com",
             "medium":"https://medium.com",

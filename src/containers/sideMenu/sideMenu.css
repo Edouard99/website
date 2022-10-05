@@ -4,12 +4,20 @@
     height: 100%;
     z-index: 6;
     background: rgba(19, 9, 74, 0.682);
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction:line;
-
     
+    display: none;
+    
+}
+
+@media screen and (max-width : 900px)
+{
+    .ec__sideMenu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction:line;
+    }
+
 }
 
 .ec__sideMenu-menu_container{

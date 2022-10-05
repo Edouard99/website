@@ -5,6 +5,8 @@
   --font-family: 'Roboto', sans-serif;
 
   --color-navbar-content:#fff;
+  --background-navbar:rgba(3, 0, 28, 0.661);
+  --box-shadow-navbar:10px 10px 30px 10px rgba(3, 0, 36, 0.623);
   --color-txt-4:#abb7bd;
   --color-txt-1:#fff;
   --color-txt-2:#2ca2dd;
@@ -18,5 +20,6 @@
   --color-proj-border:#fff;
   --box-shadow-proj:10px 10px 30px 10px rgba(3, 0, 36, 1);
   --box-shadow-proj-txt:0px 5px 30px 2px #272727c9;
+  --color-txt-footer:rgba(71, 249, 255, 0.733);
 
 }

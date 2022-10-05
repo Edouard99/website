@@ -71,14 +71,14 @@ const Projects = () => {
         <h1 className='ec__Projects_title_section'>Some of my Projects</h1>
         <div className='ec__Project_box'>
           {What_to_display(slide_id,project_array,showDivArray,mountSlide,sideDisplay)}
-          <button className='ec__button' style={{gridArea: "2/1/3/2"}} onClick={() => {update_array(setshowDivArray,setMountSlide,project_array.length,setSlide_id,slide_id-1,setSideDisplay,sideDisplay);}}>
+          <button className='ec__button' style={{gridArea: "2/2/3/3"}} onClick={() => {update_array(setshowDivArray,setMountSlide,project_array.length,setSlide_id,slide_id-1,setSideDisplay,sideDisplay);}}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <svg width="24" height="24" style={{transform:"scale(0.75)"}} xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg>
           </button>
-          <button className='ec__button' style={{gridArea: "2/-2/3/-1"}} onClick={() => {update_array(setshowDivArray,setMountSlide,project_array.length,setSlide_id,slide_id+1,setSideDisplay,sideDisplay);}}>
+          <button className='ec__button' style={{gridArea: "2/-3/3/-2"}} onClick={() => {update_array(setshowDivArray,setMountSlide,project_array.length,setSlide_id,slide_id+1,setSideDisplay,sideDisplay);}}>
             <span></span>
             <span></span>
             <span></span>

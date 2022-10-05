@@ -29,10 +29,42 @@ a {
     /* global 92%+ browsers support */
     background:var(--backgroud-grad);
     display: grid;
-    grid-template-columns: 50px 150px 100px auto 100px 150px 50px;
-    grid-template-rows: 2rem 80px 150px auto 150px auto 150px 700px 50px auto;
+    grid-template-columns: 50px 75px 75px 100px auto 100px 75px 75px 50px;
+    grid-template-rows: 0rem 100px 100px auto 150px auto 50px 600px 70px 300px 70px 100px;
 }
 
+@media screen and (max-width : 1100px){
+    .App{
+        grid-template-columns: 50px 75px 75px 100px auto 100px 75px 75px 50px;
+        grid-template-rows: 0rem 100px 100px auto 150px auto 50px 800px 70px 300px 70px 100px;
+    }
+}
+
+
+@media screen and (max-width : 950px){
+    .App{
+        grid-template-columns: 5% 5% auto 5% 5%;
+    }
+}
+
+/* @media screen and (max-width : 800px){
+    .App{
+        grid-template-columns: 20px 80px auto 80px 20px;
+    }
+} */
+
+/* @media screen and (max-width : 650px){
+    .App{
+        grid-template-columns: 20px 30px auto 30px 20px;
+    }
+} */
+
+
+/* @media screen and (max-width : 500px){
+    .App{
+        grid-template-columns: 20px 150px auto 150px 20px;
+    }
+} */
 
 
 .gradient__text
@@ -97,3 +129,5 @@ a {
         margin: 4rem 2rem;
     }
 }
+
+
