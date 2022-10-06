@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://Edouard99.github.io",
+  "homepage": "https://edouard99.github.io",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.32.0",
