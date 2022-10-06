@@ -1,7 +1,7 @@
 .ec__AboutMe{
     grid-area: 6/5/7/-5;
     /* background: blue; */
-    height: 300px;
+    height: fit-content;
     width: 100%;
     display: grid;
     grid-template-columns: minmax(100px,250px) 30px auto;
@@ -29,6 +29,8 @@
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 54px;
+    text-align: left;
+    padding-left: 50px;
 }
 
 
@@ -37,7 +39,7 @@
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 20px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 
@@ -71,5 +73,14 @@
         grid-area: 1/2/2/3;
         height:auto;
         width: 100%;
+    }
+
+    .ec__AboutMe_description h1{
+        padding: 15px;
+        color: var(--color-txt-2);
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 54px;
+        text-align: center;
     }
 }

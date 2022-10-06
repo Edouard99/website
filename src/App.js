@@ -12,41 +12,33 @@ const App = () => {
   
   return (
     
-
-
     <div className="App">
         <Navbar setToggleMenu={setToggleMenu} toggleMenu={toggleMenu}/>
-        {toggleMenu &&(
-          <>
-            <Blur />
-            <SideMenu/>
-          </>
-          
-        )
-        }
+        
         <Header />
         <AboutMe/>
         <Projects/>
+        <ContactMe/>
+        <Footer/>
+        <div className='ec__overlay'>
+          <SideLinks/>
+          {toggleMenu &&(
+            <>
+              <Blur />
+              <SideMenu/>
+            </>
+          
+          )
+          }
+        </div>
         {/* <AboutMe/>
         <Projects/>
         <SideLinks/>
         <ContactMe/>
         <Footer/> */}
 
-
-        {/* <div className="gradient__bg">
-          
-          <Header/>
-        </div> */}
-        {/* <h2>Count: {count}</h2> */}
-        {/* <Brand />
-        <WhatGPT3 />
-        <Features />
-        <Possibility />
-        <Cta />
-        <Blog />
-        <Footer /> */}
     </div>
+    
   )
 }
 

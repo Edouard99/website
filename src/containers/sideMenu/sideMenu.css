@@ -1,8 +1,8 @@
 .ec__sideMenu{
-    grid-column: -4 / -1;
+    grid-column: -2 / -1;
     grid-row: 1 / -1;
     height: 100%;
-    z-index: 6;
+    z-index: 16;
     background: rgba(19, 9, 74, 0.682);
     
     display: none;

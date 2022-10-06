@@ -6,7 +6,7 @@
 
 .ec__SideLinks_container{
     position: fixed;
-    top:60%;
+    top:55%;
     height:200px;
     width: 50px;
     /* background: rgb(0, 255, 60); */
@@ -15,6 +15,28 @@
     align-items: flex-end;
     justify-content: space-evenly;
 
+}
+
+@media screen and (max-width : 1250px){
+    .ec__SideLinks_container{
+        position: fixed;
+        top:55%;
+        height:200px;
+        width: 40px;
+        /* background: rgb(0, 255, 60); */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    
+    }
+}
+
+@media screen and (max-width : 900px){
+    .ec__SideLinks_container{
+        display: none;
+    
+    }
 }
 
 .ec__SideLinks_container svg{
