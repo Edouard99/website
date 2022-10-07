@@ -12,7 +12,7 @@ const Header = () => {
         <h2 className='ec__Header_Intro_name'>Edouard Castets</h2>
       </div>
       <div className='ec__Header_Content'>
-        <h3>I'm a Deep Learning lover</h3>
+        <h3>I'm aaaa Deep Learning lover</h3>
         <p>
           I am a software & aerospace engineer specialized in Deep Learning and autonomous embeded systems and above all passionated by technology and smart systems.
         </p>
