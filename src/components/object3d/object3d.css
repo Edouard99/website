@@ -3,3 +3,10 @@
     width: 150px;
     z-index: 9;
 }
+
+@media screen and (max-width : 400px ){
+    .container_3d{
+        transform: scale(0.66666);
+    }
+
+}
