@@ -50,7 +50,7 @@ const Object = ({path_file}) => {
       const scH = container.clientHeight;
       //console.log(scW);
       const renderer = new THREE.WebGLRenderer({
-        antialias: true,
+        antialias: false,
         alpha: true,
         premultipliedAlpha : false
       });
