@@ -1,7 +1,7 @@
 .container_3d{
     height: 150px;
     width: 150px;
-    z-index: 9;
+    z-index: 2;
 }
 
 @media screen and (max-width : 400px ){

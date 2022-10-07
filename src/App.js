@@ -13,29 +13,21 @@ const App = () => {
   return (
     
     <div className="App">
-        <Navbar setToggleMenu={setToggleMenu} toggleMenu={toggleMenu}/>
-        
-        <Header />
-        <AboutMe/>
-        <Projects/>
-        <ContactMe/>
-        <Footer/>
-        <div className='ec__overlay'>
-          <SideLinks/>
-          {toggleMenu &&(
+        <Navbar setToggleMenu={setToggleMenu} toggleMenu={toggleMenu} lang={"fr"}/>
+        {toggleMenu &&(
             <>
               <Blur />
               <SideMenu/>
             </>
-          
-          )
+            )
           }
-        </div>
-        {/* <AboutMe/>
+        <Header lang={"fr"}/>
+        <AboutMe lang={"fr"}/>
         <Projects/>
-        <SideLinks/>
         <ContactMe/>
-        <Footer/> */}
+        <Footer/>
+        <SideLinks/>
+          
 
     </div>
     

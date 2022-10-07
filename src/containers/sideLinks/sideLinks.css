@@ -1,6 +1,7 @@
 .ec__SideLinks{
     grid-area: 1/1/-1/2;
     display: flex;
+    z-index: 2;
 
 }
 
@@ -32,7 +33,7 @@
     }
 }
 
-@media screen and (max-width : 900px){
+@media screen and (max-width : 950px){
     .ec__SideLinks_container{
         display: none;
     

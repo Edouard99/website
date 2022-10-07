@@ -29,29 +29,25 @@ a {
     /* global 92%+ browsers support */
     background:var(--backgroud-grad);
     display: grid;
-    grid-template-columns: 50px 75px 75px 100px auto 100px 75px 75px 50px;
+    /* grid-template-columns: 50px 75px 75px 100px auto 100px 75px 75px 50px;
+    grid-template-rows: 0rem 100px 100px auto 150px auto 50px 600px 70px 300px 70px 100px; */
+    grid-template-columns: 50px 0px 75px 75px 100px auto 100px 75px 75px 50px;
     grid-template-rows: 0rem 100px 100px auto 150px auto 50px 600px 70px 300px 70px 100px;
 }
 
-.ec__overlay{
-    grid-area: 1/1/-1/-1;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50px 200px auto;
-    grid-template-rows: 100%;
-
-}
 
 @media screen and (max-width : 1250px){
-    .ec__overlay{
-        grid-template-columns: 35px 215px auto;
+    .App{
+        /* grid-template-columns: 35px 215px auto; */
+        grid-template-columns: 35px 15px 75px 75px 100px auto 100px 75px 75px 50px;
     }
 }
 
 @media screen and (max-width : 1100px){
     .App{
-        grid-template-columns: 50px 75px 75px 100px auto 100px 75px 75px 50px;
+        /* grid-template-columns: 50px 75px 75px 100px auto 100px 75px 75px 50px;
+        grid-template-rows: 0rem 100px 100px auto 150px auto 50px 750px 70px 300px 70px 100px; */
+        grid-template-columns: 35px 15px 75px 75px 100px auto 100px 75px 75px 50px;
         grid-template-rows: 0rem 100px 100px auto 150px auto 50px 750px 70px 300px 70px 100px;
     }
 }
@@ -59,7 +55,8 @@ a {
 
 @media screen and (max-width : 950px){
     .App{
-        grid-template-columns: 5% 5% auto 5% 5%;
+        /* grid-template-columns: 5% 5% auto 5% 5%; */
+        grid-template-columns: 5% 5% 20% auto 5% 5%;
     }
 }
 

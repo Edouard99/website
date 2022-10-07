@@ -1,15 +1,15 @@
 .ec__sideMenu{
-    grid-column: -2 / -1;
+    grid-column: 4 / -1;
     grid-row: 1 / -1;
     height: 100%;
-    z-index: 16;
+    z-index: 4;
     background: rgba(19, 9, 74, 0.682);
     
     display: none;
     
 }
 
-@media screen and (max-width : 900px)
+@media screen and (max-width : 950px)
 {
     .ec__sideMenu{
         display: flex;

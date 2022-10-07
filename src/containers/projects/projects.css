@@ -1,5 +1,5 @@
 .ec__Projects{
-    grid-area: 8/3/9/-3;
+    grid-area: 8/4/9/-3;
     width: 100%;
     height:100%;
     display: grid;
@@ -7,6 +7,7 @@
     grid-template-rows: 100px 35px  auto;
     justify-items: center;
     align-items: center;
+    z-index: 2;
     /* overflow: hidden; */
 }
 
@@ -46,6 +47,7 @@
     background: transparent;
     justify-content: center;
     align-items: center;
+
 }
 
 .ec__button svg{
@@ -171,7 +173,7 @@
 {
 
     .ec__Projects{
-        grid-area: 8/2/9/-2;
+        grid-area: 8/3/9/-2;
     }
 
 }
@@ -180,7 +182,7 @@
 {
 
     .ec__Projects{
-        grid-area: 8/2/9/-2;
+        grid-area: 8/3/9/-2;
         grid-template-rows: 100px 5px 645px;
     }
 

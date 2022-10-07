@@ -13,10 +13,11 @@
 
 
 .ec__ContactMe{
-    grid-area: 10/5/11/-5;
+    grid-area: 10/6/11/-5;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 25% 25% 25% 25%;
+    z-index: 2;
 }
 
 .ec__ContactMe_Title{
@@ -111,12 +112,20 @@
 @media screen and (max-width : 1300px)
 {
     .ec__ContactMe{
-        grid-area: 10/4/11/-4;
+        grid-area: 10/5/11/-4;
     }
 
 }
 
 @media screen and (max-width : 1100px)
+{
+    .ec__ContactMe{
+        grid-area: 10/4/11/-3;
+    }
+
+}
+
+@media screen and (max-width : 950px)
 {
     .ec__ContactMe{
         grid-area: 10/3/11/-3;
