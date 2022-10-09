@@ -7,7 +7,7 @@ import logo from '../../assets/logo.svg';
 
 
 
-const Navbar = ({setToggleMenu,toggleMenu,lang}) => {
+const Navbar = ({setToggleMenu,toggleMenu,setLang,lang}) => {
   return (
     <>
     <div className='ec__navbar'>
@@ -18,13 +18,13 @@ const Navbar = ({setToggleMenu,toggleMenu,lang}) => {
       <div className='ec__navbar-links'>
         
         <div className='ec__navbar-links_container'>
-          <Menu lang={lang}/>
+          <Menu setLang={setLang} lang={lang}/>
         </div>
       </div>
       
       <div className='ec__navbar-menu'>
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => {setToggleMenu(false)}}/>
+          ? <RiCloseLine style={{position:"fixed",top:"38px"}}color="#fff" size={27} onClick={() => {setToggleMenu(false)}}/>
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)}/>
         }
 

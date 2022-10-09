@@ -1,0 +1,85 @@
+.button_lang_en{
+    cursor: pointer;
+    width: 45px;
+    height: 30px;
+    color: #FFF;
+    background-image: url('../../fr_flag.svg');
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    margin: 0 2rem;
+}
+
+
+.button_lang_en:hover {
+    text-decoration: none;
+    background-image: url('../../fr_flag.svg');
+    background-size: cover;
+  }
+
+  .button_lang_fr{
+    cursor: pointer;
+    width: 45px;
+    height: 30px;
+    color: #FFF;
+    background-image: url('../../eng_flag.svg');
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    margin: 0 2rem;
+}
+
+
+.button_lang_fr:hover {
+    text-decoration: none;
+    background-image: url('../../eng_flag.svg');
+    background-size: cover;
+  }
+
+
+  
+.button_lang:after {
+background: #FFF;
+border: 0px solid rgb(27, 52, 181);
+content: "";
+height: 155px;
+left: -75px;
+opacity: .8;
+position: absolute;
+top: -50px;
+-webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+width: 50px;
+transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+z-index: 1;
+}
+.button_lang:hover:after {
+background: #FFF;
+border: 20px solid #000;
+opacity: 0;
+left: 120%;
+-webkit-transform: rotate(40deg);
+        transform: rotate(40deg);
+}
+
+@media screen and (max-width:950px) {
+  .button_lang_en{
+    background-image: url('../../fr_flag.svg');
+    margin: 0 1rem;
+  }
+  .button_lang_en:hover{
+    background-image: url('../../fr_flag.svg');
+  }
+  .button_lang_fr{
+    background-image: url('../../eng_flag.svg');
+    margin: 0 1rem;
+  }
+  .button_lang_fr:hover{
+    background-image: url('../../eng_flag.svg');
+  }
+
+
+
+}

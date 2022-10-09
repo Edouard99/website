@@ -35,7 +35,9 @@
 
 @media screen and (max-width : 950px){
     .ec__SideLinks_container{
+
         display: none;
+
     
     }
 }

@@ -196,6 +196,10 @@
 @media screen and (max-width : 950px)
 {
 
+    .ec__Projects{
+        grid-area: 8/2/9/-2;
+    }
+
     .ec__Projects_title_section{
         grid-area: 1/1/2/-1;
         display: flex;

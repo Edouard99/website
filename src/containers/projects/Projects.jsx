@@ -51,7 +51,7 @@ function update_array(setshowDivArray,setMountSlide,size,setSlide_id,new_id,setS
   setMountSlide(mountSlide);
 }
 
-const Projects = () => {
+const Projects = ({lang}) => {
   const [slide_id, setSlide_id] = useState(0);
   const [sideDisplay, setSideDisplay] = useState(true);
   let project_array=project_file.projects.map((data, key) => {
@@ -67,8 +67,16 @@ const Projects = () => {
   const [showDivArray, setshowDivArray] = useState(init);
   const [mountSlide, setMountSlide] = useState(init);
   return (
-    <div className='ec__Projects'>
-        <div className='ec__Projects_title_section'><h1>Some of my Projects</h1></div>
+    <div id="projects" className='ec__Projects'>
+        <div className='ec__Projects_title_section'>
+          
+          {lang
+            ?
+            <h1>Mes Projets</h1>
+            :
+              <h1>Some of my Projects</h1>
+          }
+        </div>
         <div className='ec__Project_box'>
           {What_to_display(slide_id,project_array,showDivArray,mountSlide,sideDisplay)}
           <button className='ec__button ec__button_left'  onClick={() => {update_array(setshowDivArray,setMountSlide,project_array.length,setSlide_id,slide_id-1,setSideDisplay,sideDisplay);}}>
