@@ -24,3 +24,9 @@
     font-size: 18px;
     text-align: center;
 }
+
+.ec__Footer_websitecode a{
+    text-decoration: underline;
+    text-underline-offset :5px;
+    color: var(--color-txt-footer-link);
+}

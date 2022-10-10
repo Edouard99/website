@@ -35,8 +35,9 @@ const ContactMe = ({lang}) => {
                         <h1>Contact Me</h1>
                     </div>
                     <div className='ec__ContactMe_Text'>
-                        <p>I am looking for job opportunity in Machine & Deep Learning</p>
-                        <p>Feel free to contact me if you re interested in my work !</p>
+                        <p style={{marginBottom:"8px"}}>
+                            I am actually looking for job opportunities in Machine and Deep Learning</p>
+                        <p>Don't hesitate to contact me if you like my work !</p>
                     </div>
                     <div className='ec__ContactMe_Links'>
                         <a href="www.linkedin.com/in/edouard-castets" target="_blank" title='Linkedin' className='Linkedin'>

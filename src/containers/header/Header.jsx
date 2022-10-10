@@ -28,7 +28,7 @@ const Header = ({lang}) => {
             <>
               <h3>Je suis un passionné de Deep Learning</h3>
               <p style={{marginTop:"5px"}}>
-                Je suis ingénieur spécialisé en Machine & Deep Learning et en systemes embarqués autonomes.
+                Je suis ingénieur spécialisé en Machine & Deep Learning et en systèmes embarqués autonomes.
               </p>
               <p style={{marginTop:"5px"}}>Mon ambition est de faire partie de la recherche dans l’innovation des systèmes de demain pour les rendre 
                         plus performants, plus fiables et intelligents.</p>
@@ -37,10 +37,10 @@ const Header = ({lang}) => {
           : 
             <>
               <h3>I'm a Deep Learning lover</h3>
-              <p>
-                I am a software engineer specialized in Deep Learning and autonomous embeded systems.
+              <p style={{marginTop:"5px"}}>
+              I am a software engineer specialized in Deep Learning and autonomous embeded systems.
               </p>
-              <p> I am passionated about AI, new technology and smart systems.</p>
+              <p style={{marginTop:"5px"}}>My goal is to take part in research into innovation of tomorrow's systems to make them more efficient, reliable and intelligent</p>
             </>
         }
       </div>
