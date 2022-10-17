@@ -26,7 +26,7 @@ function icon_rendering(icons){
     if (icons[n]!=""){
       list.push(
         <div className='ec__Project_icon'>
-          <a className='Github'>
+          <a href={icons[n]} target="_blank">
             {list_icon[n]}
           </a>
         </div>

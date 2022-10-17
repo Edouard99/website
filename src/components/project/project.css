@@ -3,9 +3,9 @@
     width: 100%;
     grid-area: 1/4/-1/-4;
     display: grid;
-    grid-template-columns: 30% 10% 10% 20% 30%;
-    grid-template-rows: 8% 12.5% 3% 35% 3% 15% 3% 12.5% 8%;
-    
+    grid-template-columns: 30% 10% 15% 15% 30%;
+    /* grid-template-rows: 8% 12.5% 3% 35% 3% 15% 3% 12.5% 8%; */
+    grid-template-rows: 3% 12.5% 3% 45% 3% 15% 3% 12.5% 3%;
 }
 
 .ec__Project_left{
@@ -13,8 +13,8 @@
     width: 100%;
     grid-area: 1/4/-1/-4;
     display: grid;
-    grid-template-columns: 30% 20% 10% 10% 30%;
-    grid-template-rows: 8% 12.5% 3% 40% 3% 15% 3% 7.5% 8%;
+    grid-template-columns: 30% 15% 15% 10% 30%;
+    grid-template-rows: 3% 12.5% 3% 45% 3% 15% 3% 7.5% 3%;
 }
 
 .ec__Project_right .ec__Project_Name{
@@ -213,6 +213,11 @@
         align-items: center;
     }
 
+    .ec__Project_right .ec__Project_Name h3,
+    .ec__Project_left .ec__Project_Name h3{
+        text-align: center;
+    }
+
     .ec__Project_right .ec__Project_Description_text,
     .ec__Project_left .ec__Project_Description_text{
         grid-area: 4/1/5/-1;
@@ -250,7 +255,7 @@
     .ec__Project_right img,
     .ec__Project_left img{
         grid-area: 3/1/4/-1;
-        width: 95%;
+        width: 85%;
     }
 }
 
@@ -272,14 +277,14 @@
     .ec__Project_right,
     .ec__Project_left{
         grid-template-columns: 10% 80% 10%;
-        grid-template-rows: 8% fit-content(10%) auto auto auto 10px 40px 10px;
+        grid-template-rows: 8% fit-content(10%) auto auto 3px auto 10px 40px 10px;
     }
 
 
     .ec__Project_right img,
     .ec__Project_left img{
         grid-area: 3/1/4/-1;
-        width: 95%;
+        width: 85%;
     }
 
     .ec__Project_right .ec__Project_Name,
@@ -300,6 +305,7 @@
     .ec__Project_right .ec__Project_Description_text p{
         margin-right: 5px;
         margin-left: 5px;
+        font-size: 15px;
     }
 
 
@@ -307,13 +313,19 @@
     .ec__Project_left .ec__Project_topics{
         grid-area: 2/2/3/-2;
         justify-content: center;
+        padding-top: 5px;
         padding-left: 0px;
         padding-right: 0px;
     }
 
+    .ec__Project_right .ec__Project_topics p,
+    .ec__Project_left .ec__Project_topics p{
+        font-size: 12px;
+    }
+
     .ec__Project_right .ec__Project_icons,
     .ec__Project_left .ec__Project_icons{
-        grid-area: 5/2/6/-2;
+        grid-area: 6/2/7/-2;
         display: flex;
         flex-direction: row;
         align-items: center;

@@ -5,12 +5,18 @@ import {Project} from '../../components/'
 import { useState} from "react";
 
 
-function What_to_display(slide_id,project_array,showDivArray,mountSlide,sideDisplay){
+function What_to_display(lang,nbr_proj,showDivArray,mountSlide,sideDisplay){
   let list=[]
   let class_string_classic;
   let class_string_fade;
-  for (let n=0;n<project_array.length;n++){
-    let data=project_file.projects[n]
+  for (let n=0;n<nbr_proj;n++){
+    let data;
+    if (lang){
+      data=project_file.projects_fr[n]
+    }
+    else{
+      data=project_file.projects_en[n]
+    }
     if (sideDisplay){
       class_string_classic="ec__Project_right"
       class_string_fade="ec__Project_right fade"
@@ -54,15 +60,8 @@ function update_array(setshowDivArray,setMountSlide,size,setSlide_id,new_id,setS
 const Projects = ({lang}) => {
   const [slide_id, setSlide_id] = useState(0);
   const [sideDisplay, setSideDisplay] = useState(true);
-  let project_array=project_file.projects.map((data, key) => {
-    return <>
-        <Project id={data.id} name={data.name} description={data.description} pic_link={data.picture_link}
-            topics={data.topics} github={data.github} youtube={data.youtube}
-            medium={data.medium} colab={data.colab} other={data.otherlink}/>
-    </>
-  
-  })
-  let init= Array(project_array.length).fill(false);
+  let nbr_proj=project_file.projects_fr.length;
+  let init= Array(nbr_proj).fill(false);
   init[0]=true;
   const [showDivArray, setshowDivArray] = useState(init);
   const [mountSlide, setMountSlide] = useState(init);
@@ -78,15 +77,15 @@ const Projects = ({lang}) => {
           }
         </div>
         <div className='ec__Project_box'>
-          {What_to_display(slide_id,project_array,showDivArray,mountSlide,sideDisplay)}
-          <button className='ec__button ec__button_left'  onClick={() => {update_array(setshowDivArray,setMountSlide,project_array.length,setSlide_id,slide_id-1,setSideDisplay,sideDisplay);}}>
+          {What_to_display(lang,nbr_proj,showDivArray,mountSlide,sideDisplay)}
+          <button className='ec__button ec__button_left'  onClick={() => {update_array(setshowDivArray,setMountSlide,nbr_proj,setSlide_id,slide_id-1,setSideDisplay,sideDisplay);}}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <svg width="24" height="24" style={{transform:"scale(0.75)"}} xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg>
           </button>
-          <button className='ec__button ec__button_right'  onClick={() => {update_array(setshowDivArray,setMountSlide,project_array.length,setSlide_id,slide_id+1,setSideDisplay,sideDisplay);}}>
+          <button className='ec__button ec__button_right'  onClick={() => {update_array(setshowDivArray,setMountSlide,nbr_proj,setSlide_id,slide_id+1,setSideDisplay,sideDisplay);}}>
             <span></span>
             <span></span>
             <span></span>

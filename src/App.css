@@ -60,3 +60,11 @@ a {
     }
 }
 
+@media screen and (max-width : 500px){
+    .App{
+        /* grid-template-columns: 5% 5% auto 5% 5%; */
+        grid-template-columns: 5% 5% auto 200px 5% 5%;
+        grid-template-rows: 0rem 100px 100px auto 100px auto 50px 800px 70px 400px 70px 100px;
+    }
+}
+

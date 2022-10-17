@@ -1,40 +1,79 @@
 {
-    "projects": [
+    "projects_fr": [
         {
             "id": 0,
-            "name": "Mixed Reality Game",
-            "description": "This project aims to develop a puzzle game for Mixed Reality Environment as Hololens 2 (on which I have worked). This puzzle game challenges the user to solve 3d holographic puzzle game. There is 3 different level of difficulty. A tutorial is also implemented to teach the user how to interact with Holographic pieces.",
+            "name": "Jeu en Réalité Augmentée",
+            "description": "Ce projet vise à développer un jeu de puzzle pour un environnement en réalité augmentée (Hololens 2) avec Unity & MRTK (Mixed Reality Toolkit). Ce jeu de puzzle met l'utilisateur au défi de résoudre des puzzles holographiques 3d. Le jeu permet l'enregistrement des données analytiques (position du joueur, difficulté du puzzle, état du puzzle...) du joueur pour une analyse des données. Il existe trois niveaux de difficulté différents ainsi qu’un tutoriel pour apprendre à l'utilisateur à interagir avec les pièces holographiques.",
             "picture_link": "game_Moment.jpg",
-            "topics":["Python","Ada","Machine Learning","Topic1","ReactJs","Deep Learning"],
-            "github":"https://github.com",
+            "topics":["Unity","Réalité Augmentée","MRTK","Hololens 2","Python","C#"],
+            "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
             "youtube":"https://youtube.com",
-            "medium":"https://medium.com",
+            "medium":"",
             "colab":"",
-            "otherlink":"https://link.com"
+            "otherlink":""
         },
         {
             "id": 1,
-            "name": "ECG Classifier",
-            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on its ElectroCardiogram signal. The model has been train on the WESAD dataset WESAD dataset.",
-            "picture_link": "Network.png",
-            "topics":["Python","Machine Learning"],
-            "github":"https://github.com",
+            "name": "Classifier emotionnel ECG",
+            "description": "Ce projet vise à développer un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir du signal de son électrocardiogramme. Chaque signal électrocardiogramme est prétraité afin d'extraire les caractéristiques pertinentes à fournir au réseau neuronal. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle a été entraîné avec une cross-validation sur l'ensemble de données du WESAD dataset. Le modèle final moyen a une accuracy de 92% et un f1-score de 82%.",
+            "picture_link": "ECG.PNG",
+            "topics":["Pytorch","Heart Py","Feature Extraction","Deep Learning"],
+            "github":"https://github.com/Edouard99/Stress_Detection_ECG",
             "youtube":"",
             "medium":"",
-            "colab":"https://colab.com",
+            "colab":"",
             "otherlink":""
         },
         {
             "id": 2,
-            "name": "Pupil diameter Classifier",
-            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on its Pupil diameter evolution. The model has been train on a dataset built by Pedrotti et al",
-            "picture_link": "prototype.jpg",
-            "topics":["Python","Lua","Machine Learning","Raspberry Pi"],
-            "github":"https://github.com",
+            "name": "Classifier emotionnel Pupillométrie",
+            "description": "Ce projet vise à développer un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir de l'évolution du diamètre de sa pupille. Chaque signal du diamètre de la pupille est prétraité avec une transformée en Wavelet afin de filtrer le signal et d'en extraire des composantes frequentielles à fournir au réseau neuronal. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle a été entraîné avec une cross-validation sur un dataset existant. Le modèle final moyen a une accuracy de 72%.",
+            "picture_link": "ECG.PNG",
+            "topics":["Pytorch","Transformée Wavelet","Feature Extraction","Deep Learning"],
+            "github":"https://github.com/Edouard99/Stress_Detetion_Pupil_Tracking",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        }
+
+    ],
+    "projects_en": [
+        {
+            "id": 0,
+            "name": "Mixed Reality Game",
+            "description": "This project aims to develop a puzzle game for Mixed Reality Environment (as Hololens 2) using Unity and MRTK (Mixed Reality Toolkit). This puzzle game challenges the user to solve 3d holographic puzzle game. The game allows the recording of the player’s analytics (player position, puzzle difficulty, puzzle state…) for further data analysis. There is 3 different level of difficulty. A tutorial is also implemented to teach the user how to interact with Holographic pieces.",
+            "picture_link": "game_Moment.jpg",
+            "topics":["Unity","Mixed Reality","MRTK","Hololens 2","Python","C#"],
+            "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
             "youtube":"https://youtube.com",
             "medium":"",
             "colab":"",
-            "otherlink":"https://link.com"
+            "otherlink":""
+        },
+        {
+            "id": 1,
+            "name": "Emotional classifier ECG",
+            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on its ElectroCardiogram signal. Each electrocardiogram signal is preprocessed to extract relevant features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model has been trained with a cross-validation process on the WESAD dataset. Average final model has an accuracy of 92% and a f1-score of 82%",
+            "picture_link": "ECG.PNG",
+            "topics":["Pytorch","Heart Py","Feature Extraction","Deep Learning"],
+            "github":"https://github.com/Edouard99/Stress_Detection_ECG",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        {
+            "id": 2,
+            "name": "Classifier emotionnel Pupillométrie",
+            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on pupillometry. Each pupil-size signal is preprocessed with Wavelet Transform to filter and extract relevant frequential features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model has been trained with a cross-validation process on an existing dataset. Average final model has an accuracy of 72%",
+            "picture_link": "ECG.PNG",
+            "topics":["Pytorch","Wavelet Transform","Feature Extraction","Deep Learning"],
+            "github":"https://github.com/Edouard99/Stress_Detetion_Pupil_Tracking",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
         }
 
     ]
