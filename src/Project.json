@@ -14,7 +14,7 @@
         },
         {
             "id": 1,
-            "name": "Classifier emotionnel ECG",
+            "name": "Classifieur emotionnel ECG",
             "description": "Ce projet vise à développer un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir du signal de son électrocardiogramme. Chaque signal électrocardiogramme est prétraité afin d'extraire les caractéristiques pertinentes à fournir au réseau neuronal. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle a été entraîné avec une cross-validation sur l'ensemble de données du WESAD dataset. Le modèle final moyen a une accuracy de 92% et un f1-score de 82%.",
             "picture_link": "ECG.PNG",
             "topics":["Pytorch","Heart Py","Feature Extraction","Deep Learning"],
@@ -26,7 +26,7 @@
         },
         {
             "id": 2,
-            "name": "Classifier emotionnel Pupillométrie",
+            "name": "Classifieur emotionnel Pupillométrie",
             "description": "Ce projet vise à développer un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir de l'évolution du diamètre de sa pupille. Chaque signal du diamètre de la pupille est prétraité avec une transformée en Wavelet afin de filtrer le signal et d'en extraire des composantes frequentielles à fournir au réseau neuronal. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle a été entraîné avec une cross-validation sur un dataset existant. Le modèle final moyen a une accuracy de 72%.",
             "picture_link": "Pupil_d.PNG",
             "topics":["Pytorch","Transformée Wavelet","Feature Extraction","Deep Learning"],
