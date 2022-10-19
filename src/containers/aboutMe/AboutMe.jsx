@@ -112,7 +112,7 @@ const AboutMe = ({lang}) => {
           
       </div>
       <div className='ec__AboutMe_picture'>
-          <img src="profil_pic.JPG"></img>
+          <img src="profil_pic_3.jpg"></img>
       </div>
     </div>
   )
