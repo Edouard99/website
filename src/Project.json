@@ -54,7 +54,7 @@
         {
             "id": 1,
             "name": "Emotional classifier ECG",
-            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on its ElectroCardiogram signal. Each electrocardiogram signal is preprocessed to extract relevant features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model has been trained with a cross-validation process on the WESAD dataset. Average final model has an accuracy of 92% and a f1-score of 82%",
+            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on its ElectroCardiogram signal. Each electrocardiogram signal is preprocessed to extract relevant features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model has been trained with a cross-validation process on the WESAD dataset. The average final model has an accuracy of 92% and a f1-score of 82%",
             "picture_link": "ECG.PNG",
             "topics":["Pytorch","Heart Py","Feature Extraction","Deep Learning"],
             "github":"https://github.com/Edouard99/Stress_Detection_ECG",
@@ -66,7 +66,7 @@
         {
             "id": 2,
             "name": "Classifier emotionnel Pupillométrie",
-            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on pupillometry. Each pupil-size signal is preprocessed with Wavelet Transform to filter and extract relevant frequential features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model has been trained with a cross-validation process on an existing dataset. Average final model has an accuracy of 72%",
+            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on pupillometry. Each pupil-size signal is preprocessed with Wavelet Transform to filter and extract relevant frequential features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model has been trained with a cross-validation process on an existing dataset. The average final model has an accuracy of 72%",
             "picture_link": "Pupil_d.PNG",
             "topics":["Pytorch","Wavelet Transform","Feature Extraction","Deep Learning"],
             "github":"https://github.com/Edouard99/Stress_Detetion_Pupil_Tracking",

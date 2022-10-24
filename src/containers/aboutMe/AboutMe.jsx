@@ -30,7 +30,7 @@ const AboutMe = ({lang}) => {
                   <li>un Master of Engineering en Aérospatiale de l’<a href="https://www.iit.edu/" target="_blank">Institut Technologique de l’Illinois (IIT – Chicago, IL, USA)</a></li>
               </ul>
               <p style={{marginTop:"5px",textAlign:"justify-all",wordSpacing:"-2px"}}> 
-                Durant ce double diplôme je me suis spécialisé en Machine et Deep Learning et Systèmes Autonomes Embarqués.
+                Durant ce double diplôme, je me suis spécialisé en Machine et Deep Learning et Systèmes Autonomes Embarqués.
               </p>
               
             </>
@@ -44,7 +44,7 @@ const AboutMe = ({lang}) => {
                   <li>a Master of Engineering in Aerospace Engineering from <a href="https://www.iit.edu/" target="_blank">Institut Technologique de l’Illinois (IIT – Chicago, IL, USA)</a></li>
               </ul>
               <p style={{marginTop:"5px",textAlign:"justify-all",wordSpacing:"-2px"}}> 
-                During this double degree program I have specialized in Machine and Deep Learning and autonomous embeded systems.
+                During this double degree program, I have specialized in Machine and Deep Learning and autonomous embedded systems.
               </p>
             </>
           }
@@ -54,16 +54,15 @@ const AboutMe = ({lang}) => {
             ? 
               <>
                 <p style={{marginTop:"20px",textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Jusqu'à aujourd'hui j'ai eu l'occasion de travailler sur différents projets en lien 
+                  Jusqu'à aujourd'hui j'ai travaillé sur différents projets en lien 
                   avec le Deep Learning et les systèmes embarqués autonomes.
                 </p>
                 <p style={{textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Parmi ces projets j’ai eu l’occasion de travailler avec une équipe de 
+                  Parmi ces projets, j’ai eu l’occasion de travailler avec une équipe de 
                   recherche de l'unitversité de l'IIT Chicago pendant 8 mois sur un projet de développement d’un outil éducatif basé sur la réalité mixte.
                 </p>
                 <p style={{marginTop:"10px"}}>
-                  Durant ces différents projets j’ai eu 
-                  l’occasion d’enrichir mes compétences en Deep Learning, systèmes embarqués, optimisation, automatisation, Game Design (AR/VR), 
+                  Durant ces différents projets j’ai pu enrichir mes compétences en Deep Learning, systèmes embarqués, optimisation, automatisation, Game Design (AR/VR) et 
                   réseau.
                 </p>
                 <p style={{marginTop:"10px"}}>
@@ -83,16 +82,16 @@ const AboutMe = ({lang}) => {
             : 
               <>
                 <p style={{marginTop:"20px",textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Fast-forward to today, I have had the occasion to work on different projects linked to Deep Learning and autonomous embeded systems.
+                  Fast-forward to today, I have worked on different projects linked to Deep Learning and autonomous embedded systems.
                   
                 </p>
                 <p style={{textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Among these projects I have had the opportunity to work with a research team of the Chicago IIT University during 8 months
+                  Among these projects, I have had the opportunity to work with a research team of the IIT Chicago University for 8 months
                   on the development of an educational tool based on mixed reality.
                 </p>
                 <p style={{marginTop:"10px"}}>
-                  My projects led me to acquire and increase my skills and knowledges in Deep Learning, embeded systems, optimization, 
-                  Game Design (AR/VR), network.
+                  My projects led me to acquire and increase my skills and knowledge in Deep Learning, embedded systems, optimization, 
+                  Game Design (AR/VR) and network.
                 </p>
                 <p style={{marginTop:"10px"}}>
                   Here are some technologies I've been working with recently:
@@ -103,7 +102,7 @@ const AboutMe = ({lang}) => {
                     <li>Azure Storage & Azure Active Directory</li>
                     <li>Pytorch – Deep Learning (Classifier, Denoiser, GAN)</li>
                     <li>BLE & TCP Protocol – Network</li>
-                    <li>Raspberry PI 4 – Embeded Systems</li>
+                    <li>Raspberry PI 4 – Embedded Systems</li>
                     <li>React js – Web Development</li>
                   </ul>
                 
@@ -112,7 +111,7 @@ const AboutMe = ({lang}) => {
           
       </div>
       <div className='ec__AboutMe_picture'>
-          <img src="profil_pic_3.jpg"></img>
+          <img src="profil_pic_5.jpg"></img>
       </div>
     </div>
   )

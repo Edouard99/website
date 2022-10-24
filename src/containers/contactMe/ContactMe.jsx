@@ -11,7 +11,7 @@ const ContactMe = ({lang}) => {
                         <h1>Contact</h1>
                     </div>
                     <div className='ec__ContactMe_Text'>
-                        <p style={{marginBottom:"8px"}}>Je suis actuellement à la recherche d'une position en tant qu'ingénieur Machine & Deep Learning</p>
+                        <p style={{marginBottom:"8px"}}>Je suis actuellement à la recherche d'un poste en tant qu'ingénieur Machine & Deep Learning</p>
                         <p>N'hésitez pas à me contacter si vous aimez mon travail</p>
                     </div>
                     <div className='ec__ContactMe_Links'>
@@ -36,7 +36,7 @@ const ContactMe = ({lang}) => {
                     </div>
                     <div className='ec__ContactMe_Text'>
                         <p style={{marginBottom:"8px"}}>
-                            I am actually looking for job opportunities in Machine and Deep Learning</p>
+                            I am actually looking for a job opportunity in Machine and Deep Learning</p>
                         <p>Don't hesitate to contact me if you like my work !</p>
                     </div>
                     <div className='ec__ContactMe_Links'>

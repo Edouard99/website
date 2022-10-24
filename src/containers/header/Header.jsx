@@ -11,7 +11,7 @@ const Header = ({lang}) => {
         {lang
           ? 
             <>
-            <h4>Bonjour je suis</h4>
+            <h4>Bonjour je m'appelle</h4>
             <h2 className='ec__Header_Intro_name'>Edouard Castets</h2>
             
             </>
@@ -38,9 +38,9 @@ const Header = ({lang}) => {
             <>
               <h3>I'm a Deep Learning lover</h3>
               <p style={{marginTop:"5px"}}>
-              I am a software engineer specialized in Deep Learning and autonomous embeded systems.
+              I am a software engineer specializing in Deep Learning and autonomous embedded systems.
               </p>
-              <p style={{marginTop:"5px"}}>My goal is to take part in research into innovation of tomorrow's systems to make them more efficient, reliable and intelligent</p>
+              <p style={{marginTop:"5px"}}>My goal is to take part in research into the innovation of tomorrow's systems to make them more efficient, reliable, and intelligent</p>
             </>
         }
       </div>
