@@ -2,7 +2,7 @@
     "projects_fr": [
         {
             "id": 0,
-            "name": "Jeu en Réalité Augmentée",
+            "name": "Jeu en réalité augmentée",
             "description": "Ce projet vise à développer un jeu de puzzle pour un environnement en réalité augmentée (Hololens 2) avec Unity & MRTK (Mixed Reality Toolkit). Ce jeu de puzzle met l'utilisateur au défi de résoudre des puzzles holographiques 3d. Le jeu permet l'enregistrement des données analytiques (position du joueur, difficulté du puzzle, état du puzzle...) du joueur pour une analyse des données. Il existe trois niveaux de difficulté différents ainsi qu’un tutoriel pour apprendre à l'utilisateur à interagir avec les pièces holographiques.",
             "picture_link": "game_Moment.jpg",
             "topics":["Unity","Réalité Augmentée","MRTK","Hololens 2","Python","C#"],

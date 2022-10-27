@@ -27,10 +27,10 @@ const AboutMe = ({lang}) => {
               </p>
               <ul>
                   <li>un diplôme d’ingénieur en Aéronautique de l’<a href="https://www.ensma.fr/" target="_blank">École Nationale Supérieure de Mécanique et d'Aérotechnique (ISAE-ENSMA – Poitiers, France)</a></li>
-                  <li>un Master of Engineering en Aérospatiale de l’<a href="https://www.iit.edu/" target="_blank">Institut Technologique de l’Illinois (IIT – Chicago, IL, USA)</a></li>
+                  <li>un Master of Engineering en Aérospatial de l’<a href="https://www.iit.edu/" target="_blank">Institut Technologique de l’Illinois (IIT – Chicago, IL, USA)</a></li>
               </ul>
               <p style={{marginTop:"5px",textAlign:"justify-all",wordSpacing:"-2px"}}> 
-                Durant ce double diplôme, je me suis spécialisé en Machine et Deep Learning et Systèmes Autonomes Embarqués.
+                Durant ce double diplôme, je me suis spécialisé en Machine et Deep Learning et systèmes autonomes embarqués.
               </p>
               
             </>
@@ -59,7 +59,7 @@ const AboutMe = ({lang}) => {
                 </p>
                 <p style={{textAlign:"justify-all",wordSpacing:"-2px"}}>
                   Parmi ces projets, j’ai eu l’occasion de travailler avec une équipe de 
-                  recherche de l'unitversité de l'IIT Chicago pendant 8 mois sur un projet de développement d’un outil éducatif basé sur la réalité mixte.
+                  recherche de l'université de l'IIT Chicago pendant 8 mois sur un projet de développement d’un outil éducatif basé sur la réalité mixte.
                 </p>
                 <p style={{marginTop:"10px"}}>
                   Durant ces différents projets j’ai pu enrichir mes compétences en Deep Learning, systèmes embarqués, optimisation, automatisation, Game Design (AR/VR) et 
