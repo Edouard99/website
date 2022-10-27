@@ -26,7 +26,7 @@ const ContactMe = ({lang}) => {
                         </a>
                     </div>
                     <div title="Téléchargez mon CV"className='ec__ContactMe_Button'>
-                        <a>Mon CV</a>
+                        <a href="./EdouardCastets_Resume_FR_EN.zip" target="_blank" rel="noopener noreferrer">Mon CV</a>
                     </div>
                 </>
             :
@@ -51,7 +51,7 @@ const ContactMe = ({lang}) => {
                         </a>
                     </div>
                     <div title="Download my resume"className='ec__ContactMe_Button'>
-                        <a>Resume</a>
+                        <a href="./EdouardCastets_Resume_FR_EN.zip" target="_blank" rel="noopener noreferrer">My Resume</a>
                     </div>
                 </>
 
