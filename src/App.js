@@ -1,6 +1,6 @@
 import React from 'react'
 import { AboutMe, ContactMe, Footer, Header, Projects, SideLinks, SideMenu } from './containers'
-import { Navbar, Blur} from './components'
+import { Navbar, Blur, ResumeMenu} from './components'
 import './App.css';
 import {useState} from 'react';
 
@@ -17,25 +17,29 @@ const App = () => {
   }
   const [toggleMenu, setToggleMenu] = useState(false);
   const [lang,setLang]=useState(init_lang);
-  // console.log();
+  const [toggleResumeMenu,setToggleResumeMenu]=useState(false);
 
   
   return (
     
     <div className="App">
-        <Navbar setToggleMenu={setToggleMenu} toggleMenu={toggleMenu} setLang={setLang} lang={lang}/>
+        <Navbar setToggleMenu={setToggleMenu} toggleMenu={toggleMenu} setToggleResumeMenu={setToggleResumeMenu} setLang={setLang} lang={lang}/>
         {toggleMenu &&(
             <>
               <Blur />
-              <SideMenu setLang={setLang} lang={lang}/>
+              <SideMenu setLang={setLang} setToggleResumeMenu={setToggleResumeMenu} lang={lang}/>
    
             </>
             )
           }
+        {toggleResumeMenu &&(
+          <ResumeMenu setToggleResumeMenu={setToggleResumeMenu} lang={lang}/>
+        )
+        }
         <Header lang={lang}/>
         <AboutMe lang={lang}/>
         <Projects lang={lang}/>
-        <ContactMe lang={lang}/>
+        <ContactMe setToggleResumeMenu={setToggleResumeMenu} lang={lang}/>
         <Footer lang={lang}/>
         <SideLinks lang={lang}/>
           

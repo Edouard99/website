@@ -7,7 +7,7 @@ import logo from '../../assets/logo.svg';
 
 
 
-const Navbar = ({setToggleMenu,toggleMenu,setLang,lang}) => {
+const Navbar = ({setToggleMenu,setToggleResumeMenu,toggleMenu,setLang,lang}) => {
   return (
     <>
     <div className='ec__navbar'>
@@ -18,7 +18,7 @@ const Navbar = ({setToggleMenu,toggleMenu,setLang,lang}) => {
       <div className='ec__navbar-links'>
         
         <div className='ec__navbar-links_container'>
-          <Menu setLang={setLang} lang={lang}/>
+          <Menu setLang={setLang} setToggleResumeMenu={setToggleResumeMenu} lang={lang}/>
         </div>
       </div>
       

@@ -3,11 +3,11 @@ import './sideMenu.css';
 import { Menu} from '../../components'
 import SideLinks from '../sideLinks/SideLinks';
 
-const SideMenu = ({setLang,lang}) => {
+const SideMenu = ({setLang,setToggleResumeMenu,lang}) => {
   return (
     <div className='ec__sideMenu'>
         <div className='ec__sideMenu-menu_container'>
-            <Menu setLang={setLang} lang={lang}/>
+            <Menu setLang={setLang} setToggleResumeMenu={setToggleResumeMenu} lang={lang}/>
         </div>
           <div className='ec__SideLinks_container'>
             <a href="www.linkedin.com/in/edouard-castets" target="_blank" title='Linkedin' className='Linkedin'>
