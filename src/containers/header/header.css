@@ -1,7 +1,7 @@
 .ec__Header{
     /* background: rgb(206, 19, 19); */
     border-radius: 5px;
-    grid-area: 4 / 6 / 5 / -5;
+    grid-area: 4 / 7 / 5 / -6;
     display: grid;
     grid-template-columns: 400px auto 300px auto;
     grid-template-rows: 150px 100px;
@@ -67,6 +67,15 @@
     align-items: center;
 
 }
+
+@media screen and (max-width : 1800px)
+{
+    .ec__Header{
+        grid-area: 4 / 6 / 5 / -5;
+    }
+
+}
+
 
 @media screen and (max-width : 1300px)
 {

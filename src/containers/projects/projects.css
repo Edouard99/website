@@ -1,5 +1,5 @@
 .ec__Projects{
-    grid-area: 8/4/9/-3;
+    grid-area: 8/5/9/-4;
     width: 100%;
     height:100%;
     display: grid;
@@ -171,6 +171,15 @@
         bottom: 100%;
         }
     }
+}
+
+@media screen and (max-width : 1800px)
+{
+
+    .ec__Projects{
+        grid-area: 8/4/9/-3;
+    }
+
 }
 
 @media screen and (max-width : 1250px)

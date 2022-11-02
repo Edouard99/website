@@ -13,7 +13,7 @@
 
 
 .ec__ContactMe{
-    grid-area: 10/6/11/-5;
+    grid-area: 10/7/11/-6;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 25% 30% 20% 25%;
@@ -109,6 +109,15 @@
     100% {
         background-position-y: -480px;
     }
+}
+
+
+@media screen and (max-width : 1800px)
+{
+    .ec__ContactMe{
+        grid-area: 10/6/11/-5;
+    }
+
 }
 
 @media screen and (max-width : 1300px)

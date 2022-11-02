@@ -1,5 +1,5 @@
 .ec__AboutMe{
-    grid-area: 6/6/7/-5;
+    grid-area: 6/7/7/-6;
     /* background: blue; */
     height: fit-content;
     width: 100%;
@@ -122,6 +122,14 @@
 
 .ec__AboutMe_description_part1 ul,.ec__AboutMe_description_part2 ul{
     margin-left: 20px;
+}
+
+@media screen and (max-width : 1800px)
+{
+    .ec__AboutMe{
+        grid-area: 6/6/7/-5;
+    }
+
 }
 
 
