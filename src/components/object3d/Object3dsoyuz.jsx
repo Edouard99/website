@@ -48,7 +48,6 @@ const Object = ({path_file}) => {
     if (container && !renderer) {
       const scW = container.clientWidth;
       const scH = container.clientHeight;
-      //console.log(scW);
       const renderer = new THREE.WebGLRenderer({
         antialias: false,
         alpha: true,
@@ -96,6 +95,7 @@ const Object = ({path_file}) => {
 
       return () => {
         cancelAnimationFrame(req);
+        console.log("hello");
         renderer.dispose();
       };
     }

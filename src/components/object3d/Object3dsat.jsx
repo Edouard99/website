@@ -43,9 +43,10 @@ const Object = ({path_file}) => {
   useEffect(() => {
     const { current: container } = refContainer;
     if (container && !renderer) {
-      const scW = container.clientWidth;
-      const scH = container.clientHeight;
-      //console.log(scW);
+      // const scW = container.clientWidth;
+      // const scH = container.clientHeight;
+      const scW=150;
+      const scH=150;
       const renderer = new THREE.WebGLRenderer({
         antialias: false,
         alpha: true,
@@ -97,12 +98,11 @@ const Object = ({path_file}) => {
   }, []);
 
   return (
-    <div className='container_3d'
+    <div id="container_3d" className='container_3d'
       ref={refContainer}
     >
       {loading && (
         <span style={{ left: "50%", top: "50%" }}>
-          Loading...
         </span>
       )}
     </div>
