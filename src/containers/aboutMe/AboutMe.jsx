@@ -62,7 +62,7 @@ const AboutMe = ({lang}) => {
                   recherche de l'université de l'IIT Chicago pendant 8 mois sur un projet de développement d’un outil éducatif basé sur la réalité mixte.
                 </p>
                 <p style={{marginTop:"10px"}}>
-                  Durant ces différents projets j’ai pu enrichir mes compétences en Deep Learning, systèmes embarqués, optimisation, automatisation, Game Design (AR/VR) et 
+                  Durant ces différents projets j’ai pu enrichir mes compétences en Deep Learning, systèmes embarqués, vision par ordinateur, optimisation, automatisation, Game Design (AR/VR) et 
                   réseau.
                 </p>
                 <p style={{marginTop:"10px"}}>
@@ -86,12 +86,12 @@ const AboutMe = ({lang}) => {
                   
                 </p>
                 <p style={{textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Among these projects, I have had the opportunity to work with a research team of the IIT Chicago University for 8 months
+                  Among these projects, I have had the opportunity to work with a research team of IIT Chicago University for 8 months
                   on the development of an educational tool based on mixed reality.
                 </p>
                 <p style={{marginTop:"10px"}}>
-                  My projects led me to acquire and increase my skills and knowledge in Deep Learning, embedded systems, optimization, 
-                  Game Design (AR/VR) and network.
+                  My projects led me to acquire and increase my skills and knowledge in Deep Learning, embedded systems, computer vision, optimization, 
+                  Game Design (AR/VR), and network.
                 </p>
                 <p style={{marginTop:"10px"}}>
                   Here are some technologies I've been working with recently:

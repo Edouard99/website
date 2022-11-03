@@ -40,7 +40,7 @@ const Header = ({lang}) => {
               <p style={{marginTop:"5px"}}>
               I am a software engineer specializing in Deep Learning and autonomous embedded systems.
               </p>
-              <p style={{marginTop:"5px"}}>My goal is to take part in research into the innovation of tomorrow's systems to make them more efficient, reliable, and intelligent</p>
+              <p style={{marginTop:"5px"}}>My goal is to take part in research into the innovation of tomorrow's systems to make them more efficient, reliable, and intelligent.</p>
             </>
         }
       </div>

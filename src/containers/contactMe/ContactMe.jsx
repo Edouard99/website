@@ -11,8 +11,8 @@ const ContactMe = ({setToggleResumeMenu,lang}) => {
                         <h1>Contact</h1>
                     </div>
                     <div className='ec__ContactMe_Text'>
-                        <p style={{marginBottom:"8px"}}>Je suis actuellement à la recherche d'un poste en tant qu'ingénieur Machine & Deep Learning</p>
-                        <p>N'hésitez pas à me contacter si vous aimez mon travail</p>
+                        <p style={{marginBottom:"8px"}}>Je suis actuellement à la recherche d'un poste en tant qu'ingénieur Machine & Deep Learning.</p>
+                        <p>N'hésitez pas à me contacter si vous aimez mon travail !</p>
                     </div>
                     <div className='ec__ContactMe_Links'>
                         <a href="www.linkedin.com/in/edouard-castets" target="_blank" title='Linkedin' className='Linkedin'>
@@ -36,7 +36,7 @@ const ContactMe = ({setToggleResumeMenu,lang}) => {
                     </div>
                     <div className='ec__ContactMe_Text'>
                         <p style={{marginBottom:"8px"}}>
-                            I am actually looking for a job opportunity in Machine and Deep Learning</p>
+                            I am looking for a job opportunity in Machine and Deep Learning.</p>
                         <p>Don't hesitate to contact me if you like my work !</p>
                     </div>
                     <div className='ec__ContactMe_Links'>

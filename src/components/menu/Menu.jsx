@@ -7,7 +7,7 @@ const Menu = ({setLang,setToggleResumeMenu,lang}) => {
         {lang
           ? 
             <>
-              <p><a href="./#about_me">À propos</a></p>
+              <p style={{textTransform:'none'}}><a href="./#about_me">À propos</a></p>
               <p><a href="./#projects">Projets</a></p>
               <p><a href="./#contact_me">Contact</a></p>
               <p><a onClick={() =>{setToggleResumeMenu(true)}}>Mon CV</a></p>

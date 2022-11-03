@@ -14,7 +14,7 @@ const Footer = ({lang}) => {
           :
             <>
               <p>Built and Designed by <a href="https://github.com/Edouard99/website" target="_blank">Edouard Castets</a></p>
-              <p>Design inspired by <a href="https://brittanychiang.com/" target="_blank">Brittany Chiang template</a></p>
+              <p>Design inspired by <a href="https://brittanychiang.com/" target="_blank">Brittany Chiang's template</a></p>
             </>
         }
       </div>
