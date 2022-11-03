@@ -3,7 +3,7 @@
         {
             "id": 0,
             "name": "Jeu en réalité augmentée",
-            "description": "Ce projet vise à développer un jeu de puzzle pour un environnement en réalité augmentée (HoloLens 2) avec Unity & MRTK (Mixed Reality Toolkit). Ce jeu de puzzle met l'utilisateur au défi de résoudre des puzzles holographiques 3d. Le jeu permet l'enregistrement des données analytiques du joueur (position du joueur, difficulté du puzzle, état du puzzle...) pour une analyse des données. Il existe trois niveaux de difficulté différents ainsi qu’un tutoriel pour apprendre à l'utilisateur à interagir avec les pièces holographiques.",
+            "description": "Ce projet vise à développer un jeu de puzzle pour un environnement en réalité augmentée (HoloLens 2) avec Unity & MRTK (Mixed Reality Toolkit). Ce jeu de puzzle met l'utilisateur au défi de résoudre des puzzles holographiques 3D. Le jeu permet l'enregistrement des données analytiques du joueur (position du joueur, difficulté du puzzle, état du puzzle...) pour une analyse des données. Il existe trois niveaux de difficulté différents ainsi qu’un tutoriel pour apprendre à l'utilisateur à interagir avec les pièces holographiques.",
             "picture_link": "game_Moment.jpg",
             "topics":["Unity","Réalité Augmentée","MRTK","HoloLens 2","Python","C#","Azure"],
             "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
@@ -27,7 +27,7 @@
         {
             "id": 2,
             "name": "Classifieur émotionnel Pupillométrie",
-            "description": "Ce projet vise à développer un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir de l'évolution du diamètre de sa pupille. Chaque signal du diamètre de la pupille est prétraité avec une transformée en Wavelet afin de filtrer le signal et d'en extraire des composantes fréquentielles à fournir au réseau de neurones. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle est entraîné avec une cross-validation sur un dataset public. Le modèle final moyen a une accuracy de 72%.",
+            "description": "L’ objectif de ce projet est le développement d’un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir de l'évolution du diamètre de sa pupille. Chaque signal du diamètre de la pupille est prétraité avec une transformée en Wavelet afin de filtrer le signal et d'en extraire des composantes fréquentielles à fournir au réseau de neurones. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle est entraîné avec une cross-validation sur un dataset public. Le modèle final moyen a une accuracy de 72%.",
             "picture_link": "Pupil_d.PNG",
             "topics":["Pytorch","Python","Transformée Wavelet","Feature Extraction","Deep Learning"],
             "github":"https://github.com/Edouard99/Stress_Detetion_Pupil_Tracking",
@@ -39,7 +39,7 @@
         {
             "id": 3,
             "name": "Générateur d'images (GAN)",
-            "description": "Ce projet a pour objectif de développer plusieurs réseaux de neurones génératifs (DC-GAN et W-GAN). Dans le cadre de ce projet j’ai choisi de générer des Pokémons. Les datasets sont à disposition et j’y ai appliqué une méthode de data augmentation pour améliorer l’entrainement. Pour éviter le mode Collapse, un layer de Mini Batch-Discrimination est utilisé. Une fois entrainés, les réseaux sont capables de produire des images avec des formes nettes semblables à des petits monstres parfois terrifiants. Une amélioration de ces réseaux est prévue à l’avenir.",
+            "description": "Ce projet a pour objectif de développer plusieurs réseaux de neurones génératifs (DC-GAN et W-GAN). Dans le cadre de ce projet j’ai choisi de générer des Pokémons. Les datasets sont à disposition et j’y ai appliqué une méthode de data augmentation pour améliorer l’entraînement. Pour éviter le mode Collapse, un layer de Mini Batch-Discrimination est utilisé. Une fois entrainés, les réseaux sont capables de produire des images avec des formes nettes semblables à des petits monstres parfois terrifiants. Une amélioration de ces réseaux est prévue à l’avenir.",
             "picture_link": "pokemon.PNG",
             "topics":["Pytorch","Python","GAN","Data Augmentation","Deep Learning","Computer Vision","Mini Batch-Discrimination"],
             "github":"https://github.com/Edouard99/GAN",
@@ -74,18 +74,6 @@
         },
         {
             "id": 6,
-            "name": "Mon portofolio",
-            "description": "Eh bien, vous vous trouvez sur le résultat de ce projet! Dans le but de mettre en valeur mon travail et de pouvoir le partager, j'ai créé ce site en ReactJS.",
-            "picture_link": "website.PNG",
-            "topics":["ReactJs","GitHub Pages","NodeJs","JavaScript","HTML5","CSS3"],
-            "github":"https://github.com/Edouard99/website",
-            "youtube":"",
-            "medium":"",
-            "colab":"",
-            "otherlink":""
-        },
-        {
-            "id": 7,
             "name": "Prédiction du rythme cardiaque PPG",
             "description": "L'objectif de ce projet est d'utiliser un modèle de Deep Learning pour prédire la fréquence cardiaque à partir d'un signal PPG (signal du pouls) contaminé par l’accélération. En effet, dû au mouvement, la fréquence cardiaque peut être difficile à calculer à partir d'un signal contaminé car les pics de fréquence cardiaque sont bruités par l'accélération. En utilisant le spectre de Fourier et le Deep Learning, un modèle prédit la fréquence cardiaque à partir du spectre tandis que l'autre débruite le signal puis prédit ensuite la fréquence cardiaque.",
             "picture_link": "PPG.PNG",
@@ -95,14 +83,27 @@
             "medium":"",
             "colab":"",
             "otherlink":""
+        },
+        {
+            "id": 7,
+            "name": "Mon portofolio",
+            "description": "Eh bien, vous vous trouvez sur le résultat de ce projet! J'ai réalisé ce site dans le but de mettre en valeur mon travail et de pouvoir le partager. Il a été développé en ReactJS.",
+            "picture_link": "website.PNG",
+            "topics":["ReactJs","GitHub Pages","NodeJs","JavaScript","HTML5","CSS3"],
+            "github":"https://github.com/Edouard99/website",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
         }
+        
 
     ],
     "projects_en": [
         {
             "id": 0,
             "name": "Mixed Reality Game",
-            "description": "This project aims to develop a puzzle game for Mixed Reality Environment (as HoloLens 2) using Unity and MRTK (Mixed Reality Toolkit). This puzzle game challenges the user to solve 3d holographic puzzle games. The game allows the recording of the player’s analytics (player position, puzzle difficulty, puzzle state…) for further data analysis. There are 3 different levels of difficulty. A tutorial is implemented to teach the user how to interact with Holographic pieces.",
+            "description": "This project aims to develop a puzzle game for Mixed Reality Environment (as HoloLens 2) using Unity and MRTK (Mixed Reality Toolkit). This puzzle game challenges the user to solve 3D holographic puzzle games. The game allows the recording of the player’s analytics (player position, puzzle difficulty, puzzle state…) for further data analysis. There are 3 different levels of difficulty. A tutorial is implemented to teach the user how to interact with Holographic pieces.",
             "picture_link": "game_Moment.jpg",
             "topics":["Unity","Mixed Reality","MRTK","Hololens 2","Python","C#"],
             "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
@@ -126,7 +127,7 @@
         {
             "id": 2,
             "name": "Emotional classifier Pupillometry",
-            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on pupillometry. Each pupil-size signal is preprocessed with Wavelet Transform to filter and extract relevant frequential features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model is trained with a cross-validation process on a public dataset. The average final model has an accuracy of 72%.",
+            "description": "This project's goal is to create a deep learning model able to predict the emotional state (stress/no stress) of an individual based on pupillometry. Each pupil-size signal is preprocessed with Wavelet Transform to filter and extract relevant frequential features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model is trained with a cross-validation process on a public dataset. The average final model has an accuracy of 72%.",
             "picture_link": "Pupil_d.PNG",
             "topics":["Pytorch","Python","Wavelet Transform","Feature Extraction","Deep Learning"],
             "github":"https://github.com/Edouard99/Stress_Detetion_Pupil_Tracking",
@@ -173,23 +174,24 @@
         },
         {
             "id": 6,
-            "name": "My portofolio",
-            "description": "Well, you are looking at the result of this project! To share my work with others, I created this website in ReactJS.",
-            "picture_link": "website.PNG",
-            "topics":["ReactJs","GitHub Pages","NodeJs","JavaScript","HTML5","CSS3"],
-            "github":"https://github.com/Edouard99/website",
-            "youtube":"",
-            "medium":"",
-            "colab":"",
-            "otherlink":""
-        },
-        {
-            "id": 7,
             "name": "Heart rate prediction from PPG",
             "description": "This project aims to use a Deep Learning model to predict the heart rate from a Blood Volume Pulse (BVP) PPG signal contaminated by motion artifact. Indeed, due to motion artifact, the heart rate can be hard to compute from a contaminated signal because the heart rate peaks are noised in the signal by acceleration. Using the Fourier spectrum and deep learning, one model predicts the heart rate from the spectrum while the other denoises the signal and then predicts the heart rate.",
             "picture_link": "PPG.PNG",
             "topics":["Pytorch","Python","Deep Learning","Fourier Spectrum","Denoiser","PPG"],
             "github":"https://github.com/Edouard99/PPG-Prediction",
+            "youtube":"",
+            "medium":"",
+            "colab":"",
+            "otherlink":""
+        },
+        
+        {
+            "id": 7,
+            "name": "My portofolio",
+            "description": "Well, you are looking at the result of this project! To share my work with others, I created this website in ReactJS.",
+            "picture_link": "website.PNG",
+            "topics":["ReactJs","GitHub Pages","NodeJs","JavaScript","HTML5","CSS3"],
+            "github":"https://github.com/Edouard99/website",
             "youtube":"",
             "medium":"",
             "colab":"",

@@ -71,9 +71,9 @@ const Projects = ({lang}) => {
           
           {lang
             ?
-            <h1>Mes Projets</h1>
+            <h1>Mes projets</h1>
             :
-              <h1>Some of my Projects</h1>
+              <h1>Some of my projects</h1>
           }
         </div>
         <div className='ec__Project_box'>

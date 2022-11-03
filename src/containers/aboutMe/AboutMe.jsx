@@ -10,11 +10,11 @@ const AboutMe = ({lang}) => {
       {lang
           ? 
             <>
-              <h1>À Propos</h1>
+              <h1>À propos</h1>
             </>
           :
             <>
-              <h1>About Me</h1>
+              <h1>About me</h1>
             </>
       }
       </div>
@@ -26,7 +26,7 @@ const AboutMe = ({lang}) => {
                 J'ai suivi un cursus double diplomant dans lequel j'ai obtenu :
               </p>
               <ul>
-                  <li>un diplôme d’ingénieur en Aéronautique de l’<a href="https://www.ensma.fr/" target="_blank">École Nationale Supérieure de Mécanique et d'Aérotechnique (ISAE-ENSMA – Poitiers, France)</a></li>
+                  <li>un diplôme d’ingénieur Aéronautique de l’<a href="https://www.ensma.fr/" target="_blank">École Nationale Supérieure de Mécanique et d'Aérotechnique (ISAE-ENSMA – Poitiers, France)</a></li>
                   <li>un Master of Engineering en Aérospatial de l’<a href="https://www.iit.edu/" target="_blank">Institut Technologique de l’Illinois (IIT – Chicago, IL, USA)</a></li>
               </ul>
               <p style={{marginTop:"5px",textAlign:"justify-all",wordSpacing:"-2px"}}> 
@@ -40,7 +40,7 @@ const AboutMe = ({lang}) => {
                 I completed a double degree program earning both :
               </p>
               <ul>
-                  <li>a Diplôme d'Ingénieur in Aeronautical Engineering from <a href="https://www.ensma.fr/en/" target="_blank">École Nationale Supérieure de Mécanique et d'Aérotechnique (ISAE-ENSMA – Poitiers, France)</a></li>
+                  <li>a Diplôme d'Ingénieur in Aerospace Engineering from <a href="https://www.ensma.fr/en/" target="_blank">École Nationale Supérieure de Mécanique et d'Aérotechnique (ISAE-ENSMA – Poitiers, France)</a></li>
                   <li>a Master of Engineering in Aerospace Engineering from <a href="https://www.iit.edu/" target="_blank">Institut Technologique de l’Illinois (IIT – Chicago, IL, USA)</a></li>
               </ul>
               <p style={{marginTop:"5px",textAlign:"justify-all",wordSpacing:"-2px"}}> 
@@ -62,7 +62,7 @@ const AboutMe = ({lang}) => {
                   recherche de l'université de l'IIT Chicago pendant 8 mois sur un projet de développement d’un outil éducatif basé sur la réalité mixte.
                 </p>
                 <p style={{marginTop:"10px"}}>
-                  Durant ces différents projets j’ai pu enrichir mes compétences en Deep Learning, systèmes embarqués, vision par ordinateur, optimisation, automatisation, Game Design (AR/VR) et 
+                  Durant ces différents projets j’ai pu enrichir mes compétences en Deep Learning, systèmes embarqués, vision par ordinateur, optimisation, automatisation, game design (AR/VR) et 
                   réseau.
                 </p>
                 <p style={{marginTop:"10px"}}>
@@ -91,7 +91,7 @@ const AboutMe = ({lang}) => {
                 </p>
                 <p style={{marginTop:"10px"}}>
                   My projects led me to acquire and increase my skills and knowledge in Deep Learning, embedded systems, computer vision, optimization, 
-                  Game Design (AR/VR), and network.
+                  game design (AR/VR), and network.
                 </p>
                 <p style={{marginTop:"10px"}}>
                   Here are some technologies I've been working with recently:
