@@ -15,7 +15,7 @@
         {
             "id": 1,
             "name": "Classifieur émotionnel ECG",
-            "description": "Ce projet vise à développer un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir du signal de son électrocardiogramme. Chaque signal électrocardiogramme est prétraité afin d'extraire les caractéristiques pertinentes à fournir au réseau neuronal. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle est entraîné avec une cross-validation sur l'ensemble de données du WESAD dataset. Le modèle final moyen a une accuracy de 92% et un f1-score de 82%.",
+            "description": "Ce projet vise à développer un réseau de neurones capable de prédire l'état émotionnel (stress/absence de stress) d'un individu à partir du signal de son électrocardiogramme. Chaque signal électrocardiogramme est prétraité afin d'extraire les caractéristiques pertinentes à fournir au réseau de neurones. Le réseau de neurones est un réseau classique full connected avec BatchNormalisation et Dropout. Le modèle est entraîné avec une cross-validation sur l'ensemble de données du WESAD dataset. Le modèle final moyen a une accuracy de 92% et un f1-score de 82%.",
             "picture_link": "ECG.PNG",
             "topics":["Pytorch","Python","Heart Py","Feature Extraction","Deep Learning"],
             "github":"https://github.com/Edouard99/Stress_Detection_ECG",
