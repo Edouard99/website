@@ -175,7 +175,7 @@
         {
             "id": 6,
             "name": "Heart rate prediction from PPG",
-            "description": "This project aims to use a Deep Learning model to predict the heart rate from a Blood Volume Pulse (BVP) PPG signal contaminated by motion artifact. Indeed, due to motion artifact, the heart rate can be hard to compute from a contaminated signal because the heart rate peaks are noised in the signal by acceleration. Using the Fourier spectrum and deep learning, one of the model predicts the heart rate from the spectrum directly while the other denoises the signal and then predicts the heart rate.",
+            "description": "This project aims to use a Deep Learning model to predict the heart rate from a Blood Volume Pulse (BVP) PPG signal contaminated by motion artifact. Indeed, due to motion artifact, the heart rate can be hard to compute from a contaminated signal because the heart rate peaks are noised in the signal by acceleration. Using the Fourier spectrum and deep learning, one of the models predicts the heart rate from the spectrum directly while the other denoises the signal and then predicts the heart rate.",
             "picture_link": "PPG.PNG",
             "topics":["Pytorch","Python","Deep Learning","Fourier Spectrum","Denoiser","PPG"],
             "github":"https://github.com/Edouard99/PPG-Prediction",
