@@ -7,7 +7,7 @@
             "picture_link": "game_Moment.jpg",
             "topics":["Unity","Réalité Augmentée","MRTK","HoloLens 2","Python","C#","Azure"],
             "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
-            "youtube":"https://youtube.com",
+            "youtube":"https://www.youtube.com/watch?v=_nZH_bKy4QY",
             "medium":"",
             "colab":"",
             "otherlink":""
@@ -70,7 +70,7 @@
             "youtube":"",
             "medium":"",
             "colab":"",
-            "otherlink":""
+            "otherlink":"https://photos.app.goo.gl/fZyDG4coL81rQbvN9"
         },
         {
             "id": 6,
@@ -107,7 +107,7 @@
             "picture_link": "game_Moment.jpg",
             "topics":["Unity","Mixed Reality","MRTK","Hololens 2","Python","C#"],
             "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
-            "youtube":"https://youtube.com",
+            "youtube":"https://www.youtube.com/watch?v=_nZH_bKy4QY",
             "medium":"",
             "colab":"",
             "otherlink":""
@@ -145,7 +145,7 @@
             "github":"https://github.com/Edouard99/GAN",
             "youtube":"",
             "medium":"",
-            "colab":"",
+            "colab":"https://colab.research.google.com/github/Edouard99/GAN/blob/main/Train.ipynb",
             "otherlink":""
         },
         {
@@ -170,7 +170,7 @@
             "youtube":"",
             "medium":"",
             "colab":"",
-            "otherlink":""
+            "otherlink":"https://photos.app.goo.gl/fZyDG4coL81rQbvN9"
         },
         {
             "id": 6,
