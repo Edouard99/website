@@ -23,7 +23,7 @@ const AboutMe = ({lang}) => {
           ? 
             <>
               <p style={{marginBottom:"5px",textAlign:"justify-all",wordSpacing:"-2px"}}> 
-                J'ai suivi un cursus double diplomant dans lequel j'ai obtenu :
+                J'ai suivi un cursus double diplômant dans lequel j'ai obtenu :
               </p>
               <ul>
                   <li>un diplôme d’ingénieur Aéronautique de l’<a href="https://www.ensma.fr/" target="_blank">École Nationale Supérieure de Mécanique et d'Aérotechnique (ISAE-ENSMA – Poitiers, France)</a></li>
@@ -41,10 +41,10 @@ const AboutMe = ({lang}) => {
               </p>
               <ul>
                   <li>a Diplôme d'Ingénieur in Aerospace Engineering from <a href="https://www.ensma.fr/en/" target="_blank">École Nationale Supérieure de Mécanique et d'Aérotechnique (ISAE-ENSMA – Poitiers, France)</a></li>
-                  <li>a Master of Engineering in Aerospace Engineering from <a href="https://www.iit.edu/" target="_blank">Institut Technologique de l’Illinois (IIT – Chicago, IL, USA)</a></li>
+                  <li>a Master of Engineering in Aerospace Engineering from <a href="https://www.iit.edu/" target="_blank">Illinois Institute of Techonology (IIT – Chicago, IL, USA)</a></li>
               </ul>
               <p style={{marginTop:"5px",textAlign:"justify-all",wordSpacing:"-2px"}}> 
-                During this double degree program, I have specialized in Machine and Deep Learning and autonomous embedded systems.
+                During this double degree program, I specialized in Machine and Deep Learning and autonomous embedded systems.
               </p>
             </>
           }
@@ -66,7 +66,7 @@ const AboutMe = ({lang}) => {
                   réseau.
                 </p>
                 <p style={{marginTop:"10px"}}>
-                  Voici quelques technologies sur lequelles j'ai travaillé récemment:
+                  Voici quelques technologies sur lesquelles j'ai travaillé récemment:
                   
                 </p>
                 <ul className='ec__AboutMe_tech_list'>
@@ -74,7 +74,7 @@ const AboutMe = ({lang}) => {
                     <li>Azure Storage & Azure Active Directory</li>
                     <li>Pytorch – Deep Learning (Classifier, Denoiser, GAN)</li>
                     <li>BLE & TCP Protocoles – Réseau</li>
-                    <li>Raspberry PI 4 – Systeme Embarqué</li>
+                    <li>Raspberry PI 4 – Système Embarqué</li>
                     <li>React js – Développement  Web</li>
                   </ul>
                 
@@ -82,7 +82,7 @@ const AboutMe = ({lang}) => {
             : 
               <>
                 <p style={{marginTop:"20px",textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Fast-forward to today, I have worked on different projects linked to Deep Learning and autonomous embedded systems.
+                  So far, I have worked on different projects linked to Deep Learning and autonomous embedded systems.
                   
                 </p>
                 <p style={{textAlign:"justify-all",wordSpacing:"-2px"}}>

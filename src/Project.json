@@ -103,7 +103,7 @@
         {
             "id": 0,
             "name": "Mixed Reality Game",
-            "description": "This project aims to develop a puzzle game for Mixed Reality Environment (as HoloLens 2) using Unity and MRTK (Mixed Reality Toolkit). This puzzle game challenges the user to solve 3D holographic puzzle games. The game allows the recording of the player’s analytics (player position, puzzle difficulty, puzzle state…) for further data analysis. There are 3 different levels of difficulty. A tutorial is implemented to teach the user how to interact with Holographic pieces.",
+            "description": "This project goal is to develop a puzzle game for a Mixed Reality Environment (as HoloLens 2) using Unity and MRTK (Mixed Reality Toolkit). This puzzle game challenges the user to solve 3D holographic puzzle games. The game allows the recording of the player’s analytics (player position, puzzle difficulty, puzzle state…) for further data analysis. There are 3 different levels of difficulty. A tutorial is provided to teach the user how to interact with holographic pieces.",
             "picture_link": "game_Moment.jpg",
             "topics":["Unity","Mixed Reality","MRTK","Hololens 2","Python","C#"],
             "github":"https://github.com/Edouard99/MixedRealityPuzzleGame",
@@ -115,7 +115,7 @@
         {
             "id": 1,
             "name": "Emotional classifier ECG",
-            "description": "This project aims to develop a deep learning model able to predict the emotional state (stress/no stress) of an individual based on its ElectroCardiogram signal. Each electrocardiogram signal is preprocessed to extract relevant features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model is trained with a cross-validation process on the WESAD dataset. The average final model has an accuracy of 92% and an f1-score of 82%.",
+            "description": "This project aimed at developing a deep learning model able to predict the emotional state (stress/no stress) of an individual based on his/her ElectroCardiogram signal. Each electrocardiogram signal is preprocessed to extract relevant features feeding the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model is trained with a cross-validation process on the WESAD dataset. The average final model has a 92% accuracy and a 82% f1-score.",
             "picture_link": "ECG.PNG",
             "topics":["Pytorch","Python","Heart Py","Feature Extraction","Deep Learning"],
             "github":"https://github.com/Edouard99/Stress_Detection_ECG",
@@ -127,7 +127,7 @@
         {
             "id": 2,
             "name": "Emotional classifier Pupillometry",
-            "description": "This project's goal is to create a deep learning model able to predict the emotional state (stress/no stress) of an individual based on pupillometry. Each pupil-size signal is preprocessed with Wavelet Transform to filter and extract relevant frequential features to feed to the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model is trained with a cross-validation process on a public dataset. The average final model has an accuracy of 72%.",
+            "description": "This project's goal is to create a deep learning model able to predict the emotional state (stress/no stress) of an individual based on pupillometry. Each pupil-size signal is preprocessed with Wavelet Transform to filter and extract relevant frequency features feeding the neural network. The neural network is a classic fully connected network with BatchNormalization and Dropout. The model is trained with a cross-validation process on a public dataset. The average final model has a 72% accuracy.",
             "picture_link": "Pupil_d.PNG",
             "topics":["Pytorch","Python","Wavelet Transform","Feature Extraction","Deep Learning"],
             "github":"https://github.com/Edouard99/Stress_Detetion_Pupil_Tracking",
@@ -139,7 +139,7 @@
         {
             "id": 3,
             "name": "Image Generator (GAN)",
-            "description": "This project aims to develop several generative neural networks (DC-GAN and W-GAN). In this project, I chose to generate Pokemons. Datasets are available, and data augmentation was applied to improve the training. To avoid Collapse mode, a Mini Batch-Discrimination layer is used. Once trained, the networks produce images with sharp edges like small terrifying monsters. An improvement of these networks is planned in the future.",
+            "description": "This project aimed at developing several generative neural networks (DC-GAN and W-GAN). In this project, I chose to generate Pokemons. Datasets are available, and data augmentation was applied to improve the training. To avoid Collapse mode, a Mini Batch-Discrimination layer is used. Once trained, the networks produce images with sharp edges like small terrifying monsters. An improvement of these networks is planned for the future.",
             "picture_link": "pokemon.PNG",
             "topics":["Pytorch","Python","GAN","Data Augmentation","Deep Learning","Computer Vision","Mini Batch-Discrimination"],
             "github":"https://github.com/Edouard99/GAN",
@@ -151,7 +151,7 @@
         {
             "id": 4,
             "name": "Estimation of an MPC control law",
-            "description": "The aim of this project is to use a Deep Learning model to estimate an MPC (Method Predictive Control) control law. Using a neural network to estimate the control law reduces the computational cost required. Yet, one problem is that the model will only give an estimation of the ideal control law. To ensure the respect of the constraints and the system's stability, the Deep Learning model estimates the control law of a Robust MPC controller (implemented in Matlab).",
+            "description": "The aim of this project is to use a Deep Learning model to estimate an MPC (Method Predictive Control) control law. Using a neural network to estimate the control law reduces the computational cost required. Yet, one problem is that the model will only give an estimation of the ideal control law. To ensure respect of constraints and system's stability, the Deep Learning model estimates the control law of a Robust MPC controller (implemented in Matlab).",
             "picture_link": "MPC.PNG",
             "topics":["Pytorch","Python","Deep Learning","Matlab","MPC controler","Autonomous Embedded Systems"],
             "github":"https://github.com/Edouard99/DeepLearning-Robust-MPC-Estimation",
@@ -163,7 +163,7 @@
         {
             "id": 5,
             "name": "Data collection system",
-            "description": "This project aims to create a data collection system using the Pupil Core Device and the Empatica E4. This system can collect, process, synchronize data (of both devices), and store data in real-time with a wireless process. That means that Pupil Core device will not be wired to the computer (using a TCP protocol), and Empatica E4’s data will be collected in real-time using a Bluetooth Low Energy Protocol.",
+            "description": "This project aims at creating a data collection system using the Pupil Core Device and the Empatica E4. The system can collect, process, synchronize data (of both devices), and store data in real-time with a wireless process. This means that the Pupil Core device will not be wired to the computer (using a TCP protocol), and Empatica E4’s data will be collected in real-time using a Bluetooth Low Energy Protocol.",
             "picture_link": "SystemCollection.PNG",
             "topics":["Python","BLE Protocol","TCP/IP","Raspberry PI4","Pupil Tracking","Socket","Async","Embedded Systems"],
             "github":"https://github.com/Edouard99/RemotePupilCoreDevice-Empatica",
@@ -175,7 +175,7 @@
         {
             "id": 6,
             "name": "Heart rate prediction from PPG",
-            "description": "This project aims to use a Deep Learning model to predict the heart rate from a Blood Volume Pulse (BVP) PPG signal contaminated by motion artifact. Indeed, due to motion artifact, the heart rate can be hard to compute from a contaminated signal because the heart rate peaks are noised in the signal by acceleration. Using the Fourier spectrum and deep learning, one model predicts the heart rate from the spectrum while the other denoises the signal and then predicts the heart rate.",
+            "description": "This project aims to use a Deep Learning model to predict the heart rate from a Blood Volume Pulse (BVP) PPG signal contaminated by motion artifact. Indeed, due to motion artifact, the heart rate can be hard to compute from a contaminated signal because the heart rate peaks are noised in the signal by acceleration. Using the Fourier spectrum and deep learning, one of the model predicts the heart rate from the spectrum directly while the other denoises the signal and then predicts the heart rate.",
             "picture_link": "PPG.PNG",
             "topics":["Pytorch","Python","Deep Learning","Fourier Spectrum","Denoiser","PPG"],
             "github":"https://github.com/Edouard99/PPG-Prediction",
