@@ -151,7 +151,7 @@
         {
             "id": 4,
             "name": "Estimation of an MPC control law",
-            "description": "The aim of this project is to use a Deep Learning model to estimate an MPC (Method Predictive Control) control law. Using a neural network to estimate the control law reduces the computational cost required. Yet, one problem is that the model will only give an estimation of the ideal control law. To ensure respect of constraints and system's stability, the Deep Learning model estimates the control law of a Robust MPC controller (implemented in Matlab).",
+            "description": "The aim of this project is to use a Deep Learning model to estimate an MPC (Method Predictive Control) control law. Using a neural network to estimate the control law reduces the computational cost required. Yet, one problem is that the model will only give an estimation of the ideal control law. To ensure respect of constraints and system stability, the Deep Learning model estimates the control law of a Robust MPC controller (implemented in Matlab).",
             "picture_link": "MPC.PNG",
             "topics":["Pytorch","Python","Deep Learning","Matlab","MPC controler","Autonomous Embedded Systems"],
             "github":"https://github.com/Edouard99/DeepLearning-Robust-MPC-Estimation",
