@@ -86,7 +86,7 @@
         },
         {
             "id": 7,
-            "name": "Mon portofolio",
+            "name": "Mon portfolio",
             "description": "Eh bien, vous vous trouvez sur le résultat de ce projet! J'ai réalisé ce site dans le but de mettre en valeur mon travail et de pouvoir le partager. Il a été développé en ReactJS.",
             "picture_link": "website.PNG",
             "topics":["ReactJs","GitHub Pages","NodeJs","JavaScript","HTML5","CSS3"],
@@ -187,7 +187,7 @@
         
         {
             "id": 7,
-            "name": "My portofolio",
+            "name": "My portfolio",
             "description": "Well, you are looking at the result of this project! To share my work with others, I created this website in ReactJS.",
             "picture_link": "website.PNG",
             "topics":["ReactJs","GitHub Pages","NodeJs","JavaScript","HTML5","CSS3"],
