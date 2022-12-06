@@ -45,10 +45,11 @@ function mod(n, m) {
   return ((n % m) + m) % m;
 }
 
-function update_array(setshowDivArray,setMountSlide,size,setSlide_id,new_id,setSideDisplay,sideDisplay){
+function update_array(setshowDivArray,setMountSlide,size,setSlide_id,setIndexSlide,new_id,setSideDisplay,sideDisplay){
   let n=mod(new_id,size)
   setSideDisplay(!sideDisplay)
   setSlide_id(n);
+  setIndexSlide(n);
   let showDivArray = Array(size).fill(false);
   let mountSlide = Array(size).fill(false);
   showDivArray[n]=true;
@@ -57,12 +58,21 @@ function update_array(setshowDivArray,setMountSlide,size,setSlide_id,new_id,setS
   setMountSlide(mountSlide);
 }
 
-const Projects = ({lang}) => {
-  const [slide_id, setSlide_id] = useState(0);
-  const [sideDisplay, setSideDisplay] = useState(true);
+const Projects = ({lang,indexSlide,setIndexSlide}) => {
   let nbr_proj=project_file.projects_fr.length;
+  let index = indexSlide;
+  if (indexSlide<0){
+    setIndexSlide(0);
+    index=0;
+  }
+  if (indexSlide>=nbr_proj){
+    setIndexSlide(0);
+    index=0;
+  }
+  const [slide_id, setSlide_id] = useState(index);
+  const [sideDisplay, setSideDisplay] = useState(true);
   let init= Array(nbr_proj).fill(false);
-  init[0]=true;
+  init[slide_id]=true;
   const [showDivArray, setshowDivArray] = useState(init);
   const [mountSlide, setMountSlide] = useState(init);
   return (
@@ -78,14 +88,14 @@ const Projects = ({lang}) => {
         </div>
         <div className='ec__Project_box'>
           {What_to_display(lang,nbr_proj,showDivArray,mountSlide,sideDisplay)}
-          <button className='ec__button ec__button_left'  onClick={() => {update_array(setshowDivArray,setMountSlide,nbr_proj,setSlide_id,slide_id-1,setSideDisplay,sideDisplay);}}>
+          <button className='ec__button ec__button_left'  onClick={() => {update_array(setshowDivArray,setMountSlide,nbr_proj,setSlide_id,setIndexSlide,slide_id-1,setSideDisplay,sideDisplay);}}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <svg width="24" height="24" style={{transform:"scale(0.75)"}} xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg>
           </button>
-          <button className='ec__button ec__button_right'  onClick={() => {update_array(setshowDivArray,setMountSlide,nbr_proj,setSlide_id,slide_id+1,setSideDisplay,sideDisplay);}}>
+          <button className='ec__button ec__button_right'  onClick={() => {update_array(setshowDivArray,setMountSlide,nbr_proj,setSlide_id,setIndexSlide,slide_id+1,setSideDisplay,sideDisplay);}}>
             <span></span>
             <span></span>
             <span></span>
