@@ -54,34 +54,40 @@ const AboutMe = ({lang}) => {
             ? 
               <>
                 <p style={{marginTop:"20px",textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Jusqu'à aujourd'hui j'ai travaillé sur différents projets en lien 
-                  avec le Deep Learning et les systèmes embarqués autonomes.
-                </p>
-                <p style={{textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Parmi ces projets, j’ai eu l’occasion de travailler avec une équipe de 
+                  Au cours de mon séjour aux Etats-Unis j’ai travaillé avec une équipe de 
                   recherche de l'université de l'IIT Chicago pendant 8 mois sur un projet de développement d’un outil éducatif basé sur la réalité mixte.
                 </p>
-                <p style={{marginTop:"10px"}}>
+                <p>
+
+                </p>
+                <p style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
+                  Je suis désormais en poste en tant qu'ingénieur Deep Learning chez Pacte Novation pour qui j'effectue des missions de prestation. Parmi ces missions j'ai notamment travaillé chez Parrot sur le développement
+                  d'un modèle IA de stéréovision pour leur futur drone. Je suis actuellement en mission chez Thalès Six GTS pour qui je développe un outil de vérification de données.
+                </p>
+                <p>
+                  
+                </p>
+                <p style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
+                  En parallèle de ma mission, je travaille sur un projet de recherche personnel soutenu par mon entreprise. Ce projet a pour objectif de développer un modèle de Deep Learning pour la géolocalisation d'image aérienne 
+                  dans le cadre de ma passion pour l'OSINT et le GEOINT.
+                </p>
+                <p style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
                   Durant ces différents projets j’ai pu enrichir mes compétences en Deep Learning, systèmes embarqués, vision par ordinateur, optimisation, automatisation, game design (AR/VR) et 
                   réseau.
                 </p>
-                <p style={{marginTop:"10px"}}>
-                  J'ai récemment pu travailler sur plusieurs cas de computer vision (classification de visages et d'images de drones sur la
-                  base du modèle Inceptionv1 de GoogLeNet) mais aussi sur un cas d'analyse de séries temporelles (modèle prédictif financier 
-                  basé sur le LSTM). Enfin je travaille actuellement sur un projet de computer vision visant à géolocaliser une image aérienne, je compte 
-                  intégrer à ce modèle un procédé d'incremental few-shot learning.                  
-                </p>
-                <p style={{marginTop:"10px"}}>
+                <p style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
                   Voici quelques technologies sur lesquelles j'ai travaillé récemment:
                   
                 </p>
                 <ul className='ec__AboutMe_tech_list'>
-                    <li>Pytorch – Deep Learning (Computer vision, analyse de séries temporelles)</li>
+                    <li>Pytorch – Deep Learning (Computer vision, Analyse de séries temporelles)</li>
+                    <li>Transformers (Swin-B,Focal Transformer, Cross attention)</li>
                     <li>GitHub & GitHub Actions </li>
                     <li>Docker & Kubernetes - Déploiement</li>
                     <li>Pyspark & Databricks – Analyse de données</li>
                     <li>AWS & Google Colab – Cloud</li>
                     <li>Deep Face Lab – Deep Learning & technologies Deep Fake</li>
+                    <li>Google Earth Engine & Pro (Imagerie Satellite)</li>
                   </ul>
                 
               </>
@@ -92,30 +98,35 @@ const AboutMe = ({lang}) => {
                   
                 </p>
                 <p style={{textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  Among these projects, I have had the opportunity to work with a research team of IIT Chicago University for 8 months
+                  During my stay in the US, I have had the opportunity to work with a research team of IIT Chicago University for 8 months
                   on the development of an educational tool based on mixed reality.
                 </p>
-                <p style={{marginTop:"10px"}}>
+                <p style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
+                  I joined Pacte Novation as a Deep Learning engineer, I carry out a number of consulting missions.
+                  Among these missions, I worked for Parrot on the development of a deep leaning stereovision model for their future UAV. 
+                  I'm currently on a mission at Thalès Six GTS, where I'm developing a data verification tool.
+                </p>
+                <p style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
+                  In parallel to my mission, I am working on a personal research project supported by my company. 
+                  The aim of this project is to develop a Deep Learning model for aerial image geolocation. This project is motivated by my passion for OSINT and GEOINT.
+                </p>
+                <p  style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
                   My projects led me to acquire and increase my skills and knowledge in Deep Learning, embedded systems, computer vision, optimization, 
                   game design (AR/VR), and network.
                 </p>
-                <p style={{marginTop:"10px"}}>
-                  I recently worked on several computer vision cases (face and UAV image classification based 
-                  on GoogLeNet's Inceptionv1 model) but also on a time series analysis case (financial predictive 
-                  model based on LSTM). Finally, I am currently working on a computer vision project aiming at 
-                  geo-localizing an aerial image(I intend to integrate an incremental few-shot learning process to this model).
-                </p>
-                <p style={{marginTop:"10px"}}>
+                <p style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
                   Here are some technologies I've been working with recently:
                   
                 </p>
                 <ul className='ec__AboutMe_tech_list'>
                     <li>Pytorch – Deep Learning (Computer vision, time series analysis)</li>
+                    <li>Transformers (Swin-B,Focal Transformer, Cross attention)</li>
                     <li>GitHub & GitHub Actions </li>
                     <li>Docker & Kubernetes - Deployment</li>
                     <li>Pyspark & Databricks – Data Analysis</li>
                     <li>AWS & Google Colab – Cloud</li>
                     <li>Deep Face Lab – Deep Learning & Deep Fake Techonology</li>
+                    <li>Google Earth Engine & Pro (Satellite Imagery)</li>
                   </ul>
                 
               </>
