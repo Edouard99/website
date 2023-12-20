@@ -55,7 +55,7 @@ const AboutMe = ({lang}) => {
               <>
                 <p style={{marginTop:"20px",textAlign:"justify-all",wordSpacing:"-2px"}}>
                   Au cours de mon séjour aux Etats-Unis j’ai travaillé avec une équipe de 
-                  recherche de l'université de l'IIT Chicago pendant 8 mois sur un projet de développement d’un outil éducatif basé sur la réalité mixte.
+                  recherche de l'université de l'IIT Chicago pendant un an sur un projet de développement d’un outil éducatif basé sur la réalité mixte.
                 </p>
                 <p>
 
@@ -98,7 +98,7 @@ const AboutMe = ({lang}) => {
                   
                 </p>
                 <p style={{textAlign:"justify-all",wordSpacing:"-2px"}}>
-                  During my stay in the US, I have had the opportunity to work with a research team of IIT Chicago University for 8 months
+                  During my stay in the US, I have had the opportunity to work with a research team of IIT Chicago University for one year
                   on the development of an educational tool based on mixed reality.
                 </p>
                 <p style={{marginTop:"10px",textAlign:"justify-all",wordSpacing:"-2px"}}>
